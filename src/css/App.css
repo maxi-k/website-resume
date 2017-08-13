@@ -1,0 +1,22 @@
+.App {
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+}
+
+.ResumeSection {
+    padding-top: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+    .InfoCard-Wrapper {
+        position: sticky;
+        top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .InfoCard-Wrapper {
+        position: relative;
+    }
+}
