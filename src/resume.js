@@ -38,7 +38,7 @@ const resumeSections = [{
           description: <p>
           I have developed and maintained a Rails application
           at <a href="#cv-itwiwi">my job</a> at the IT-department of
-          the Faculty of Business Economics at the University of Augsburg
+          the Faculty of Business and Economics at the University of Augsburg
           for almost two Years.
           </p> },
         { name: "Elixir",
@@ -91,7 +91,7 @@ const resumeSections = [{
           In a summer internship at <a href="https://www.smartrac-group.com" target="_new">
           Smartrac</a>, I got to create a server extension for their{' '}
           <a href="https://www.smart-cosmos.com">Smart Cosmos</a> IoT System using Java,
-          which made it possible to send SMS in connection with IoT events using{' '}
+          which enabled it to send SMS in connection with IoT events using{' '}
           <a href="https://www.twilio.com" target="_new">Twilio</a>.
           </p>
         }]
