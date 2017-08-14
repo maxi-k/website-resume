@@ -7,6 +7,11 @@
     padding-top: 2em;
 }
 
+.ResumeHeader {
+    margin-bottom: 0px !important;
+}
+
+
 @media only screen and (min-width: 768px) {
     .InfoCard-Wrapper {
         position: sticky;
@@ -18,5 +23,10 @@
 
     .InfoCard-Wrapper {
         position: relative;
+        margin-bottom: 2em;
     }
+
+    /* .ResumeHeader>.sub.header { */
+    /*     display: none !important; */
+    /* } */
 }
