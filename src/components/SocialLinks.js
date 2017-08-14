@@ -11,7 +11,7 @@ const rawLinks = consts.social,
 
 const SocialLinks = () => {
     return (
-        <div className="centered-text">
+        <div className="SocialLinks">
           {linkList}
         </div>
     );
