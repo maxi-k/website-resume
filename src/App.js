@@ -1,5 +1,6 @@
 import 'css/App.css';
 import React from 'react';
+import { T } from 'content'
 import { Grid, Container } from 'semantic-ui-react';
 import MainContent from 'components/MainContent';
 import Sidebar from 'components/Sidebar';
@@ -9,7 +10,7 @@ const widthDefs = {
     sideWidths: { largeScreen:  6, widescreen:  6, computer:  6, tablet:  6, mobile: 16 }
 }
 
-const App = () => {
+const RawApp = () => {
     let { mainWidths, sideWidths } = widthDefs;
     return (
         <Container className="App">
@@ -24,5 +25,7 @@ const App = () => {
         </Container>
     );
 }
+
+const App = () => <T as={RawApp} />
 
 export default App;

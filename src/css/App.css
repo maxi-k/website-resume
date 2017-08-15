@@ -7,10 +7,6 @@
     padding-top: 2em;
 }
 
-.ResumeHeader {
-    margin-bottom: 0px !important;
-}
-
 .SocialLinks {
     text-align: center;
 }
@@ -31,5 +27,9 @@
     .InfoCard-Wrapper {
         position: relative;
         margin-bottom: 2em;
+    }
+
+    .ResumeSectionItem {
+        margin-bottom: 3.2rem !important;
     }
 }

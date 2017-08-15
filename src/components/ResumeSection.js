@@ -20,7 +20,7 @@ const widthDefs = {
 const SectionItem = ({ item }) => {
     let { textWidths, titleWidths } = widthDefs;
     return (
-        <Grid.Row>
+        <Grid.Row className="ResumeSectionItem">
           <Grid.Column {...titleWidths}>
             <Header size="small"
                     as={item.link ? "a" : "h3"}
