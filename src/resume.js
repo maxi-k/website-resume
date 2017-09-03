@@ -2,6 +2,7 @@ import React from 'react';
 import SocialLinks from 'components/SocialLinks';
 
 const resumeSections = [{
+    id: "Skills",
     name: "Skills",
     items: [
         { name: "Java",
@@ -51,6 +52,7 @@ const resumeSections = [{
           </p> }
     ]
 }, {
+    id: "Education",
     name: "Education",
     items: [
         { name: "08/2015 - 08/2018",
@@ -72,6 +74,7 @@ const resumeSections = [{
         }
     ]
 }, {
+    id: "Working-Experience",
     name: "Working Experience",
     items: [
         { name: "01/2016 - 10/2017",
@@ -96,6 +99,7 @@ const resumeSections = [{
           </p>
         }]
 }, {
+    id: "Certificates",
     name: "Certificates",
     items: [
         { name: "Advanced English",
@@ -107,6 +111,7 @@ const resumeSections = [{
           </p>
         }]
 }, {
+    id: "Contact",
     name: "Contact",
     content: <SocialLinks />
 }]

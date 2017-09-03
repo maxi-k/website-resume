@@ -16,11 +16,13 @@ const ContentHeader = (
 
 const Sections = resumeSections.map((section) => {
     if (section.items) {
-        return <ItemizedSection key={section.name} name={section.name} items={section.items} />
+        return <ItemizedSection key={section.id} id={section.id} name={section.name} items={section.items} />
     } else {
-        return <FlowingSection key={section.name} name={section.name} content={section.content} />
+        return <FlowingSection key={section.id} id={section.id} name={section.name} content={section.content} />
     }
 });
+
+export { ContentHeader, Sections }
 
 const MainContent = () => {
     return (

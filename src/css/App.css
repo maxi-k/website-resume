@@ -19,6 +19,10 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
+.Portrait {
+    width: 4rem;
+    height: 4rem;
+}
 
 @media only screen and (min-width: 768px) {
     .InfoCard-Wrapper {
@@ -27,9 +31,40 @@
     }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .InfoCard-Wrapper {
         position: relative;
         margin-bottom: 2em;
     }
+}
+
+@media only print {
+    .App, .sub.header {
+        font-size: 0.8rem !important;
+    }
+    .ResumeSection {
+        padding-top: 1.5em;
+    }
+    .App {
+        display: grid !important;
+        grid-template-areas:
+            "header card"
+            "skills card"
+            "skills education"
+            "skills education"
+            "working-experience certificates"
+            "working-experience contact";
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 2.0rem;
+        padding: 2.0rem;
+    }
+
+    .InfoCard-Wrapper {grid-area: card;}
+    .InfoCard-Wrapper .extra.content { display: none }
+    .ResumeHeader { grid-area: header; }
+    .ResumeSection-Skills { grid-area: skills; }
+    .ResumeSection-Education { grid-area: education; }
+    .ResumeSection-Working-Experience { grid-area: working-experience; }
+    .ResumeSection-Certificates { grid-area: certificates; }
+    .ResumeSection-Contact { grid-area: contact; }
 }
