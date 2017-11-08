@@ -11,26 +11,27 @@ const ContentHeader = () => (
     </Header>
 )
 
-const Sections = ({ sections }) => {
-    const rendered = sections.map((section) => {
+const Sections = ({ sections }) => (
+    sections.map((section) => {
         if (section.items) {
-            return <ItemizedSection key={section.name} name={section.name} items={section.items} />
+            return <ItemizedSection key={section.id} id={section.id}
+                                    name={section.name} items={section.items} />
         } else {
-            return <FlowingSection key={section.name} name={section.name} content={section.content} />
+            return <FlowingSection key={section.id} id={section.id}
+                                   name={section.name} content={section.content} />
         }
-    });
-    return <div>
-        { rendered }
-    </div>
-}
+    })
+)
+
+export { ContentHeader, Sections }
 
 const MainContent = () => {
     return (<Container>
-            <ContentHeader />
-            <Container textAlign='center'>
-            <LanguageButtons />
-            </Container>
-            <Sections sections={t('resumeSections')} />
+              <ContentHeader />
+              <Container textAlign='center'>
+                <LanguageButtons />
+              </Container>
+              <Sections sections={t('resumeSections')} />
             </Container>);
 }
 

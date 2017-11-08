@@ -41,11 +41,11 @@ class T extends React.Component {
     }
 
     updateLanguage() {
-        this.setState({lang: language.current});
+        this.setState({lang: language.current})
     }
 
     componentWillMount() {
-        this.state = { lang: language.current }
+        this.setState({ lang: language.current })
         components.add(this);
     }
 

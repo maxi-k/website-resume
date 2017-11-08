@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Header, Divider } from 'semantic-ui-react';
 
-const Section = ({ name, children }) => {
+const Section = ({ id, name, children }) => {
     return (
-        <div className="ResumeSection">
+        <div className={"ResumeSection ResumeSection-" + id}>
           <Divider horizontal section as="h2">
             {name}
           </Divider>
@@ -36,11 +36,11 @@ const SectionItem = ({ item }) => {
     );
 }
 
-const ItemizedSection = ({ name, items }) => {
+const ItemizedSection = ({ id, name, items }) => {
     const renderedItems = items.map(
         (item) => <SectionItem key={item.name} item={item} />)
     return (
-        <Section name={name}>
+        <Section name={name} id={id}>
           <Grid stackable>
             {renderedItems}
           </Grid>
@@ -48,9 +48,9 @@ const ItemizedSection = ({ name, items }) => {
     );
 }
 
-const FlowingSection = ({ name, content }) => {
+const FlowingSection = ({ id, name, content }) => {
     return (
-        <Section name={name}>
+        <Section name={name} id={id}>
           {content}
         </Section>
     );

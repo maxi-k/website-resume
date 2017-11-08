@@ -8,6 +8,7 @@ const content = (
           occupation: "Software Engineer"
       },
       resumeSections: [{
+          id: "Skills",
           name: "Skills",
           items: [
               { name: "Java",
@@ -57,6 +58,7 @@ const content = (
                 </p> }
           ]
       }, {
+          id: "Education",
           name: "Education",
           items: [
               { name: "08/2015 - 08/2018",
@@ -78,6 +80,7 @@ const content = (
               }
           ]
       }, {
+          id: "Working-Experience",
           name: "Working Experience",
           items: [
               { name: "01/2016 - 10/2017",
@@ -102,6 +105,7 @@ const content = (
                 </p>
               }]
       }, {
+          id: "Certificates",
           name: "Certificates",
           items: [
               { name: "Advanced English",
@@ -113,6 +117,7 @@ const content = (
                 </p>
               }]
       }, {
+          id: "Contact",
           name: "Contact",
           content: <SocialLinks />
       }]})

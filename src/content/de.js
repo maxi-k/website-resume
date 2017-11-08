@@ -8,6 +8,7 @@ const content = (
           occupation: "Softwareentwickler"
       },
       resumeSections: [{
+          id: "Skills",
           name: "Fähigkeiten",
           items: [
               { name: "Java",
@@ -57,6 +58,7 @@ const content = (
                 </p> }
           ]
       }, {
+          id: "Education",
           name: "Ausbildung",
           items: [
               { name: "08/2015 - 08/2018",
@@ -78,6 +80,7 @@ const content = (
               }
           ]
       }, {
+          id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
               { name: "01/2016 - 10/2017",
@@ -102,6 +105,7 @@ const content = (
                 </p>
               }]
       }, {
+          id: "Certificates",
           name: "Zertifikate",
           items: [
               { name: "Advanced English",
@@ -113,6 +117,7 @@ const content = (
                 </p>
               }]
       }, {
+          id: "Contact",
           name: "Kontakt",
           content: <SocialLinks />
       }]})
