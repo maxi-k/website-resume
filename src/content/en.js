@@ -47,7 +47,7 @@ const content = (
                 at <a href="#cv-itwiwi">my job</a> at the IT-department of
                 the Faculty of Business and Economics at the University of Augsburg
                 for almost two Years.
-                </p> },
+                </p> } /*,
               { name: "Elixir",
                 meta: "Everything old is new again",
                 description: <p>
@@ -55,7 +55,7 @@ const content = (
                 and I am really enjoying it and the possibilities it opens up.
                 I have been working with the <a href="http://phoenixframework.org" target="_new">
                 Phoenix Framework</a> for the most part.
-                </p> }
+                </p> } */
           ]
       }, {
           id: "Education",

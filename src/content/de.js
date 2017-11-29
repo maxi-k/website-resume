@@ -14,68 +14,68 @@ const content = (
               { name: "Java",
                 meta: "The Workhorse",
                 description: <p>
-                Beginning with Java as a teenager by creating and publishing
-                multiple minecraft mods, I have since gathered a lot more experience
-                creating Java applications at my <a href="#cv-smartrac">
-                Praktikum</a> at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a> in 2015.
+                Seitdem ich als Teenager durch das Erstellen und Veröffentlichen
+                mehrerer Minecraft Mods in Java eingestiegen bin, habe ich bei
+                während meines <a href="#cv-smartrac">Praktikums</a> bei
+                {' '}<a href="https://www.smartrac-group.com" target="_new">Smartrac</a>{' '}
+                2015 einiges an Erfahrung zum Thema Java-Entwicklung gesammelt.
                 </p> },
               { name: "Clojure",
                 meta: "The Awesome Tech",
                 description: <p>
-                First encountering the language while writing a seminar paper
-                on 4D-Rotation in high school, I decided to write the {' '}
-                <a href="https://github.com/maxi-k/drawer" target="_new">accompanying Software</a>{' '}
+                Nach meinem initialen Kontakt mit der Sprache beim Schreiben
+                einer Seminararbeit über 4D-Rotation im Gymnasium, entschied ich mich
+                kurzerhand die
+                {' '}<a href="https://github.com/maxi-k/drawer" target="_new">dazugehörige Software</a>{' '}
                 in <a href="https://reagent-project.github.io" target="_new">ClojureScript + React</a>{' '}
-                and have been using and loving it ever since.
+                zu schreiben. Seitdem habe ich die Sprache(n) für viele weitere Projekte verwendet
+                und weiß sie sehr zu schätzen.
                 </p> },
               { name: "Web",
                 meta: "Unlimited Possibilities",
                 description: <p>
-                Leaving aside the basics (HTML, CSS, Sass, JS, ES6),
-                the frameworks (Bootstrap, Materialize, Semantic-UI) and the{' '}
-                <a href="https://en.m.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_new">ugly</a> (PHP),
-                I am really enjoying <a href="https://facebook.github.io/react/" target="_new">React</a> at
-                the moment - in fact,{' '}
-                <a href="https://github.com/maxi-k/website-resume" target="_new" title="Overkill, I know">
-                this Website is written using it</a>.
+                Neben den Grundlagen (HTML, CSS, Sass, JS, ES6),
+                den Frameworks (Bootstrap, Materialize, Semantic-UI) und dem
+                nötigen Übel (PHP), arbeite ich heutzutage hauptsächlich mit
+                {' '}<a href="https://facebook.github.io/react/" target="_new">React</a>{' '} -{' '}
+                <a href="https://github.com/maxi-k/website-resume" target="_new" title="Ich weiß, Overkill">
+                diese Webseite</a> ist zum Beispiel darin geschrieben.
                 </p> },
               { name: "Ruby",
                 meta: "Did someone say Rails?",
                 description: <p>
-                I have developed and maintained a Rails application
-                at <a href="#cv-itwiwi">my job</a> at the IT-department of
-                the Faculty of Business and Economics at the University of Augsburg
-                for almost two Years.
-                </p> },
-              { name: "Elixir",
+                Bei meinem Job <a href="#cv-itwiwi">my job</a> an der Wirtschaftswissenschaftlichen Fakultät
+                der Universität Augsburg habe über knapp 2 Jahre hinweg
+                eine Rails Applikation entwickelt und gepflegt
+                </p> } /*,
+               { name: "Elixir",
                 meta: "Everything old is new again",
                 description: <p>
                 I only got into <a href="https://elixir-lang.org" target="_new">Elixir</a> recently,
                 and I am really enjoying it and the possibilities it opens up.
                 I have been working with the <a href="http://phoenixframework.org" target="_new">
                 Phoenix Framework</a> for the most part.
-                </p> }
+                </p> } */
           ]
       }, {
           id: "Education",
           name: "Ausbildung",
           items: [
               { name: "08/2015 - 08/2018",
-                meta: "Bachelor of Science, University of Augsburg",
+                meta: "Bachelor of Science, Universität Augsburg",
                 description: <p>
-                I am currently a student at the University of Augsburg, studying{' '}
+                Ich bin Student an der Universität Augsburg und studiere{' '}
                 <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Computer Science and Engineering</a> with the goal of
-                getting my bachelors degree in the summer of 2018.
+                target="_new">Ingenieurinformatik</a> im Bachelor, mit vorraussichtlichem
+                Abschluss im Sommer 2018.
                 </p>
               },
               { name: "09/2007 - 6/2015",
-                meta: "Abitur, Grade 1.2 (A)",
+                meta: "Abitur, Note 1.2 (A)",
                 description: <p>
-                I went to the <a href="https://www.jakob-brucker-gymnasium.de" target="_new">
-                Jakob-Brucker-Gymnasium</a> in Kaufbeuren (Bavaria),
-                with an emphasis on humanistic studies (Latin and Ancient Greek).
+                Ich besuchte das <a href="https://www.jakob-brucker-gymnasium.de" target="_new">
+                Jakob-Brucker-Gymnasium</a> in Kaufbeuren (Bayern) mit dem
+                humanistischen Vertiefungsbereich (Latein und Altgriechisch).
                 </p>
               }
           ]
@@ -84,36 +84,35 @@ const content = (
           name: "Arbeitserfahrung",
           items: [
               { name: "01/2016 - 10/2017",
-                meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
+                meta: "IT-Abteilung der Wirtschaftswissenschaftlichen Fakultät, Universität Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Working at the <a href="http://www.wiwi.uni-augsburg.de/it/" target="_new">IT-Department</a> of
-                the biggest faculty on campus, my tasks included administering
-                multiple Linux systems in a virtual environment,
-                developing and maintaining a Ruby on Rails App, as well as maintaining
-                our monitoring system for the 900+ devices in the building.
+                Meine Aufgaben in der <a href="http://www.wiwi.uni-augsburg.de/it/" target="_new">IT-Abteilung</a> der
+                größten Fakultät auf dem Campus waren unteranderem die Administration mehrerer
+                Linux-Systeme in einer virtuellen Umgebung, die Entwicklung und Pflege eine Ruby-on-Rails Applikation,
+                so wie die Pflege des Monitoring-Systems für die 900+ Geräte im Gebäude.
                 </p> },
               { name: "08/2015 - 09/2015",
                 meta: "Smartrac Technology GmbH",
                 id: "cv-smartrac",
                 description: <p>
-                In a summer internship at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a>, I got to create a server extension for their{' '}
-                <a href="https://www.smart-cosmos.com">Smart Cosmos</a> IoT System using Java,
-                which enabled it to send SMS in connection with IoT events using{' '}
-                <a href="https://www.twilio.com" target="_new">Twilio</a>.
+                In einem Praktikum über den Sommer bei <a href="https://www.smartrac-group.com" target="_new">
+                Smartrac</a> konnte ich eine Server-Erweiterung für deren{' '}
+                <a href="https://www.smart-cosmos.com">Smart Cosmos</a> IoT-System mit Java entwickeln,
+                welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
+                <a href="https://www.twilio.com" target="_new">Twilio</a> zu verschicken.
                 </p>
               }]
       }, {
           id: "Certificates",
           name: "Zertifikate",
           items: [
-              { name: "Advanced English",
-                meta: "Language Level C2",
+              { name: "Fortgeschrittenes Englisch",
+                meta: "Sprachlevel C2",
                 description: <p>
-                In 2015 I acquired the Cambridge Advanced English Certificate
-                in ESOL International, reaching Grade A, which corresponds to the
-                Council of Europe Level C2.
+                Ich erwarb das Cambridge Advanced English Certificate (CEA) 2015,{' '}
+                und erreichte die Note A, welche zum vom Europäischen Rat
+                festgelegten Level C2 korrespondiert.
                 </p>
               }]
       }, {
