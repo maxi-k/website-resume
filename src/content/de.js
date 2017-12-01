@@ -44,9 +44,9 @@ const content = (
               { name: "Ruby",
                 meta: "Did someone say Rails?",
                 description: <p>
-                Bei meinem Job <a href="#cv-itwiwi">my job</a> an der Wirtschaftswissenschaftlichen Fakultät
+                Bei <a href="#cv-itwiwi">meinem Job</a> an der Wirtschaftswissenschaftlichen Fakultät
                 der Universität Augsburg habe über knapp 2 Jahre hinweg
-                eine Rails Applikation entwickelt und gepflegt
+                eine Rails Applikation entwickelt und gepflegt.
                 </p> } /*,
                { name: "Elixir",
                 meta: "Everything old is new again",
