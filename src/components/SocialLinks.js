@@ -1,8 +1,9 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
-import consts from 'constants.json';
+import { getContent } from 'content';
 
-const rawLinks = consts.social,
+
+const rawLinks = getContent('social'),
       linkList = rawLinks.map(
           (item, idx) =>
               <a key={item.name} title={item.name} name={item.name} href={item.path}>
@@ -17,5 +18,4 @@ const SocialLinks = () => {
     );
 }
 
-export { linkList, rawLinks };
 export default SocialLinks;
