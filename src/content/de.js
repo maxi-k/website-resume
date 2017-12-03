@@ -14,7 +14,7 @@ const content = (
               { name: "Java",
                 meta: "The Workhorse",
                 description: <p>
-                Seitdem ich als Teenager durch das Erstellen und Veröffentlichen
+                Seitdem ich als Jugendlicher durch das Erstellen und Veröffentlichen
                 mehrerer Minecraft Mods in Java eingestiegen bin, habe ich bei
                 während meines <a href="#cv-smartrac">Praktikums</a> bei
                 {' '}<a href="https://www.smartrac-group.com" target="_new">Smartrac</a>{' '}
@@ -66,7 +66,7 @@ const content = (
                 description: <p>
                 Ich bin Student an der Universität Augsburg und studiere{' '}
                 <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Ingenieurinformatik</a> im Bachelor, mit vorraussichtlichem
+                target="_new">Ingenieurinformatik</a> im Bachelor, mit voraussichtlichem
                 Abschluss im Sommer 2018.
                 </p>
               },
@@ -111,8 +111,8 @@ const content = (
                 meta: "Sprachlevel C2",
                 description: <p>
                 Ich erwarb das Cambridge Advanced English Certificate (CEA) 2015,{' '}
-                und erreichte die Note A, welche zum vom Europäischen Rat
-                festgelegten Level C2 korrespondiert.
+                und erreichte die Note A, was dem vom Europäischen Rat
+                festgelegten Sprachlevel C2 entspricht.
                 </p>
               }]
       }, {
