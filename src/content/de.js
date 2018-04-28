@@ -37,7 +37,8 @@ const content = (
                 Neben den Grundlagen (HTML, CSS, Sass, JS, ES6),
                 den Frameworks (Bootstrap, Materialize, Semantic-UI) und dem
                 nötigen Übel (PHP), arbeite ich heutzutage hauptsächlich mit
-                {' '}<a href="https://facebook.github.io/react/" target="_new">React</a>{' '} -{' '}
+                {' '}<a href="https://facebook.github.io/react/" target="_new">React</a>{' '} &ndash;
+                neben einigen anderen Projekten
                 <a href="https://github.com/maxi-k/website-resume" target="_new" title="Ich weiß, Overkill">
                 diese Webseite</a> ist zum Beispiel darin geschrieben.
                 </p> },
@@ -83,6 +84,14 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
+              { name: "10/2017 - heute",
+                meta: "Integer GmbH",
+                id: "cv-integer",
+                description: <p>
+                Im Moment arbeite ich bei einem kleinen IT Dienstleister. Hier entwickle und pflege ich
+                interne Softwareprojekte, und bin die erste Anlaufstelle für Softwareprojekte- und Aufträge
+                von Kunden.
+                </p> },
               { name: "01/2016 - 10/2017",
                 meta: "IT-Abteilung der Wirtschaftswissenschaftlichen Fakultät, Universität Augsburg",
                 id: "cv-itwiwi",

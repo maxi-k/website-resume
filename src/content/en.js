@@ -36,9 +36,9 @@ const content = (
                 the frameworks (Bootstrap, Materialize, Semantic-UI) and the{' '}
                 <a href="https://en.m.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_new">ugly</a> (PHP),
                 I am really enjoying <a href="https://facebook.github.io/react/" target="_new">React</a> at
-                the moment - in fact,{' '}
+                the moment &ndash; in fact,{' '}
                 <a href="https://github.com/maxi-k/website-resume" target="_new" title="Overkill, I know">
-                this Website is written using it</a>.
+                this Website is written using it</a>, as well as various other projects I've done.
                 </p> },
               { name: "Ruby",
                 meta: "Did someone say Rails?",
@@ -83,6 +83,14 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
+              { name: "10/2017 - now",
+                meta: "Integer IT",
+                id: "cv-integer",
+                description: <p>
+                I am currently working at a small IT Firm, where I am responsible for developing and
+                maintaining internal software projects. I am also the go-to guy when it comes to
+                developing software for customers.
+                </p> },
               { name: "01/2016 - 10/2017",
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
                 id: "cv-itwiwi",
