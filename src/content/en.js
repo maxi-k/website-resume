@@ -5,7 +5,7 @@ const content = (
     { lang: "en",
       title : "Resume",
       person: {
-          occupation: "Software Engineer"
+          occupation: "Student, Developer"
       },
       resumeSections: [{
           id: "Skills",
