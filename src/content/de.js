@@ -38,9 +38,8 @@ const content = (
                 den Frameworks (Bootstrap, Materialize, Semantic-UI) und dem
                 nötigen Übel (PHP), arbeite ich heutzutage hauptsächlich mit
                 {' '}<a href="https://facebook.github.io/react/" target="_new">React</a>{' '} &ndash;
-                neben einigen anderen Projekten
-                <a href="https://github.com/maxi-k/website-resume" target="_new" title="Ich weiß, Overkill">
-                diese Webseite</a> ist zum Beispiel darin geschrieben.
+                neben einigen anderen Projekten ist <a href="https://github.com/maxi-k/website-resume" target="_new" title="Ich weiß, Overkill">
+                diese Webseite</a> zum Beispiel darin geschrieben.
                 </p> },
               { name: "Ruby",
                 meta: "Did someone say Rails?",
@@ -62,7 +61,7 @@ const content = (
           id: "Education",
           name: "Ausbildung",
           items: [
-              { name: "08/2015 - 08/2018",
+              { name: "09/2015 - 09/2018",
                 meta: "Bachelor of Science, Universität Augsburg",
                 description: <p>
                 Ich bin Student an der Universität Augsburg und studiere{' '}

@@ -61,7 +61,7 @@ const content = (
           id: "Education",
           name: "Education",
           items: [
-              { name: "08/2015 - 08/2018",
+              { name: "09/2015 - 09/2018",
                 meta: "Bachelor of Science, University of Augsburg",
                 description: <p>
                 I am currently a student at the University of Augsburg, studying{' '}
