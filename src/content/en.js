@@ -61,13 +61,23 @@ const content = (
           id: "Education",
           name: "Education",
           items: [
+              { name: "10/2018 - 2020",
+                meta: "Master of Science, Multiple Universities" ,
+                description: <p>
+                I am part of the <a href="https://elite-se.informatik.uni-augsburg.de/" target="_new">
+                Software Engineering Elite Graduate Program
+                </a>, with the goal of getting my masters degree in software engineering in 2020.
+                As part of the program, I am a student at the University of Augsburg,
+                the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
+                </p>
+              },
               { name: "09/2015 - 09/2018",
                 meta: "Bachelor of Science, University of Augsburg",
                 description: <p>
-                I am currently a student at the University of Augsburg, studying{' '}
+                Until 2018, I was a student at the University of Augsburg, studying{' '}
                 <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Computer Science and Engineering</a> with the goal of
-                getting my bachelors degree in the summer of 2018.
+                target="_new">Computer Science and Engineering</a>.
+                I am currently awaiting the grading of my bachelor theisis.
                 </p>
               },
               { name: "09/2007 - 6/2015",

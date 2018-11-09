@@ -61,13 +61,23 @@ const content = (
           id: "Education",
           name: "Ausbildung",
           items: [
+              { name: "10/2018 - 2020",
+                meta: "Master of Science, Mehrere Universitäten" ,
+                description: <p>
+                Ich bin Teil des <a href="https://elite-se.informatik.uni-augsburg.de/" target="_new">
+                Software Engineering Elite Graduate Program
+                </a>, mit voraussichtlichem Abschluss im Sommer 2020.
+                Als Teil des Studiengangs bin ich Student an der Universität Augsburg,
+                der Technischen Universität München,
+                sowie an der Ludiwg-Maximilians Universität München.
+                </p>
+              },
               { name: "09/2015 - 09/2018",
                 meta: "Bachelor of Science, Universität Augsburg",
                 description: <p>
-                Ich bin Student an der Universität Augsburg und studiere{' '}
-                <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Ingenieurinformatik</a> im Bachelor, mit voraussichtlichem
-                Abschluss im Sommer 2018.
+                Bis 2018 studierte ich an der Universität Augsburg <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html" target="_new">
+                Ingenieurinformatik</a> im Bachelor.
+                Ich erwarte im Moment die Bewertung meiner Bachelorarbeit.
                 </p>
               },
               { name: "09/2007 - 6/2015",

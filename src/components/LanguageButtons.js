@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from 'semantic-ui-react';
-import { language, setLanguage }  from 'content'
+import { AVAILABLE_LANGUAGES, language, setLanguage }  from 'content'
 
 const LanguageButtons = () => {
-    const buttons = language.available.map((name) => {
+    const buttons = AVAILABLE_LANGUAGES.map((name) => {
         let active = name === language.current
         return <Button key={name}
         color={active ? 'blue' : null}
