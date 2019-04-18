@@ -1,6 +1,6 @@
 {
   "name": "website-2017",
-  "homepage": "https://maxi-k.github.io/website-resume/",
+  "homepage": "https://maxi-k.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,7 +19,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "deploy-domain": "gh-pages -d build -r git@github.com:maxi-k/maxi-k.github.io -b master"
   },
   "browserslist": [
     ">0.2%",
