@@ -122,8 +122,8 @@ const content = (
                 description: <p>
                 In einem Praktikum über den Sommer bei <a href="https://www.smartrac-group.com" target="_new">
                 Smartrac</a> konnte ich eine Server-Erweiterung für deren{' '}
-                <a href="https://www.smart-cosmos.com">Smart Cosmos</a> IoT-System mit Java entwickeln,
-                welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
+                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a>
+                IoT-System mit Java entwickeln, welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
                 <a href="https://www.twilio.com" target="_new">Twilio</a> zu verschicken.
                 </p>
               }]

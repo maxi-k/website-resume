@@ -125,7 +125,7 @@ const content = (
                 description: <p>
                 In a summer internship at <a href="https://www.smartrac-group.com" target="_new">
                 Smartrac</a>, I got to create a server extension for their{' '}
-                <a href="https://www.smart-cosmos.com">Smart Cosmos</a> IoT System using Java,
+                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a> IoT System using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
                 <a href="https://www.twilio.com" target="_new">Twilio</a>.
                 </p>
