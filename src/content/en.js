@@ -33,7 +33,7 @@ const content = (
                 meta: "Unlimited Possibilities",
                 description: <p>
                 Leaving aside the basics (HTML, CSS, Sass, JS, ES6),
-                the frameworks (Bootstrap, Materialize, Semantic-UI) and the{' '}
+                the frameworks (Spring, Bootstrap, Materialize, Semantic-UI) and the{' '}
                 <a href="https://en.m.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_new">ugly</a> (PHP),
                 I am really enjoying <a href="https://facebook.github.io/react/" target="_new">React</a> at
                 the moment &ndash; in fact,{' '}
@@ -72,12 +72,11 @@ const content = (
                 </p>
               },
               { name: "09/2015 - 09/2018",
-                meta: "Bachelor of Science, University of Augsburg",
+                meta: "Bachelor of Science, University of Augsburg. Final Grade 1.56 (GPA 3.6~3.8)",
                 description: <p>
                 Until 2018, I was a student at the University of Augsburg, studying{' '}
                 <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
                 target="_new">Computer Science and Engineering</a>.
-                I am currently awaiting the grading of my bachelor theisis.
                 </p>
               },
               { name: "09/2007 - 6/2015",
@@ -93,6 +92,15 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
+              { name: "08/2019 - 10/2019",
+                meta: "Oracle Labs Zurich",
+                id: "cv-oracle",
+                description: <p>
+                As a research assistant at Oracle Labs Zurich, I was able to contribute to a large
+                oracle-internal software project. I designed the architecture for a completely new part
+                of the system together with my mentor and implemented and integrated it afterwards
+                with great success.
+                </p> },
               { name: "10/2017 - now",
                 meta: "Integer IT",
                 id: "cv-integer",

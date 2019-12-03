@@ -34,9 +34,9 @@ const content = (
               { name: "Web",
                 meta: "Unlimited Possibilities",
                 description: <p>
-                Neben den Grundlagen (HTML, CSS, Sass, JS, ES6),
-                den Frameworks (Bootstrap, Materialize, Semantic-UI) und dem
-                nötigen Übel (PHP), arbeite ich heutzutage hauptsächlich mit
+                Neben den Grundlagen (HTML, CSS, Sass, JS, ES6), den Frameworks
+                (Spring, Bootstrap, Materialize, Semantic-UI) und dem nötigen Übel (PHP),
+                arbeite ich heutzutage hauptsächlich mit
                 {' '}<a href="https://facebook.github.io/react/" target="_new">React</a>{' '} &ndash;
                 neben einigen anderen Projekten ist <a href="https://github.com/maxi-k/website-resume" target="_new" title="Ich weiß, Overkill">
                 diese Webseite</a> zum Beispiel darin geschrieben.
@@ -73,11 +73,9 @@ const content = (
                 </p>
               },
               { name: "09/2015 - 09/2018",
-                meta: "Bachelor of Science, Universität Augsburg",
+                meta: "Bachelor of Science, Universität Augsburg. Abschlussnote 1,56",
                 description: <p>
-                Bis 2018 studierte ich an der Universität Augsburg <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html" target="_new">
-                Ingenieurinformatik</a> im Bachelor.
-                Ich erwarte im Moment die Bewertung meiner Bachelorarbeit.
+                Bis 2018 studierte ich an der Universität Augsburg <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html" target="_new"> Ingenieurinformatik</a> im Bachelor.
                 </p>
               },
               { name: "09/2007 - 6/2015",
@@ -93,6 +91,14 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
+              { name: "08/2019 - 10/2019",
+                meta: "Oracle Labs Zürich",
+                id: "cv-oracle",
+                description: <p>
+                Als Research Assistant bei Oracle Labs in Zürich konnte ich bei einem großen internen
+                Softwareprojekt mitwirken. Ich habe für einen neuen Systemteil zusammen mit meinem Mentor
+                die Architektur erstellt und im Anschluss mit vollem Erfolg implementiert und integriert.
+                </p> },
               { name: "10/2017 - heute",
                 meta: "Integer GmbH",
                 id: "cv-integer",
