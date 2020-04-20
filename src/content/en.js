@@ -23,11 +23,14 @@ const content = (
               { name: "Clojure",
                 meta: "The Awesome Tech",
                 description: <p>
-                First encountering the language while writing a seminar paper
-                on 4D-Rotation in high school, I decided to write the {' '}
-                <a href="https://github.com/maxi-k/drawer" target="_new">accompanying Software</a>{' '}
+                First encountering the language while writing a paper in high school, I decided to write the {' '}
+                <a href="https://github.com/maxi-k/drawer" target="_new">accompanying software</a>{' '}
                 in <a href="https://reagent-project.github.io" target="_new">ClojureScript + React</a>{' '}
-                and have been using and loving it ever since.
+                and have been using it ever since. My most recent project in Clojure(Script) was a{' '}
+                <a href="https://github.com/maxi-k/unia-beer-game" target="_new">fullstack webapp</a>{' '}
+                for the <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Game</a>{' '}
+                at the chair for <a href="https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/pi/" target="_new">Computer Science in Manufacturing</a>{' '}
+                during my bachelor's degree.
                 </p> },
               { name: "Web",
                 meta: "Unlimited Possibilities",
@@ -92,6 +95,15 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
+              { name: "04/2020 - 10/2020",
+                meta: "University of Jena",
+                id: "cv-job-jena",
+                description: <p>
+                I am employed at the chair for{' '}
+                <a href="https://dbis1.github.io/" target="_new">Databases and Information Systems</a>{' '}
+                at the University of Jena while writing my masters thesis there, mentored by{' '}
+                <a href="https://dbis1.github.io/team/leis.html" target="_new">Prof. Dr. Viktor Leis</a>.
+                </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",
                 id: "cv-oracle",
@@ -101,13 +113,14 @@ const content = (
                 of the system together with my mentor and implemented and integrated it afterwards
                 with great success.
                 </p> },
-              { name: "10/2017 - now",
+              { name: "10/2017 - 01/2020",
                 meta: "Integer IT",
                 id: "cv-integer",
                 description: <p>
-                I am currently working at a small IT Firm, where I am responsible for developing and
-                maintaining internal software projects. I am also the go-to guy when it comes to
-                developing software for customers.
+                I worked at the IT Firm <a href="https://integer.de/" target="_new">Integer</a>,
+                where I was responsible for developing and maintaining internal software projects.
+                Furthermore, I was the go-to guy when it came to software projects for customers,
+                many of which I designed and developed from start to finish.
                 </p> },
               { name: "01/2016 - 10/2017",
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
@@ -127,25 +140,25 @@ const content = (
                 Smartrac</a>, I got to create a server extension for their{' '}
                 <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a> IoT System using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
-                <a href="https://www.twilio.com" target="_new">Twilio</a>.
-                </p>
-              }]
-      }, {
-          id: "Certificates",
-          name: "Certificates",
-          items: [
-              { name: "Advanced English",
-                meta: "Language Level C2",
-                description: <p>
-                In 2015 I acquired the Cambridge Advanced English Certificate
-                in ESOL International, reaching Grade A, which corresponds to the
-                Council of Europe Level C2.
-                </p>
-              }]
-      }, {
-          id: "Contact",
-          name: "Contact",
-          content: <SocialLinks />
-      }]})
+        <a href="https://www.twilio.com" target="_new">Twilio</a>.
+                                                 </p>
+      }]
+  }, {
+    id: "Certificates",
+    name: "Certificates",
+    items: [
+      { name: "Advanced English",
+        meta: "Language Level C2",
+        description: <p>
+        In 2015 I acquired the Cambridge Advanced English Certificate
+        in ESOL International, reaching Grade A, which corresponds to the
+        Council of Europe Level C2.
+                  </p>
+    }]
+  }, {
+    id: "Contact",
+    name: "Contact",
+    content: <SocialLinks />
+}]})
 
 export default content;

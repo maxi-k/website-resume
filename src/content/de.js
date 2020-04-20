@@ -23,13 +23,15 @@ const content = (
               { name: "Clojure",
                 meta: "The Awesome Tech",
                 description: <p>
-                Nach meinem initialen Kontakt mit der Sprache beim Schreiben
-                einer Seminararbeit über 4D-Rotation im Gymnasium, entschied ich mich
-                kurzerhand die
+                Nach meinem initialen Kontakt mit der Sprache bei einer Seminararbeit im Gymnasium,
+                entschied ich mich kurzerhand die
                 {' '}<a href="https://github.com/maxi-k/drawer" target="_new">dazugehörige Software</a>{' '}
                 in <a href="https://reagent-project.github.io" target="_new">ClojureScript + React</a>{' '}
-                zu schreiben. Seitdem habe ich die Sprache(n) für viele weitere Projekte verwendet
-                und weiß sie sehr zu schätzen.
+                zu schreiben. Mein letztes Projekt in Clojure(Script) war eine{' '}
+                <a href="https://github.com/maxi-k/unia-beer-game" target="_new">full-stack Webapplikation</a>{' '}
+                für das <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Games</a>{' '}
+                beim <a href="https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/pi/" target="_new">Lehrstuhl für Produktionsinformatik</a>{' '}
+                während des Bachelors.
                 </p> },
               { name: "Web",
                 meta: "Unlimited Possibilities",
@@ -47,15 +49,7 @@ const content = (
                 Bei <a href="#cv-itwiwi">meinem Job</a> an der Wirtschaftswissenschaftlichen Fakultät
                 der Universität Augsburg habe über knapp 2 Jahre hinweg
                 eine Rails Applikation entwickelt und gepflegt.
-                </p> } /*,
-               { name: "Elixir",
-                meta: "Everything old is new again",
-                description: <p>
-                I only got into <a href="https://elixir-lang.org" target="_new">Elixir</a> recently,
-                and I am really enjoying it and the possibilities it opens up.
-                I have been working with the <a href="http://phoenixframework.org" target="_new">
-                Phoenix Framework</a> for the most part.
-                </p> } */
+                </p> }
           ]
       }, {
           id: "Education",
@@ -91,6 +85,17 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
+
+              { name: "04/2020 - 10/2020",
+                meta: "Universität Jena",
+                id: "cv-job-jena",
+                description: <p>
+                Ich bin am Lehrstuhl{' '}
+                <a href="https://dbis1.github.io/" target="_new">Datenbanken und Informationssysteme</a>{' '}
+                an der Universität Jena eingestellt, während ich dort meine Mastarbeit schreibe, welche von{' '}
+                <a href="https://dbis1.github.io/team/leis.html" target="_new">Prof. Dr. Viktor Leis</a>{' '}
+                betreut wird.
+                </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zürich",
                 id: "cv-oracle",
@@ -99,13 +104,14 @@ const content = (
                 Softwareprojekt mitwirken. Ich habe für einen neuen Systemteil zusammen mit meinem Mentor
                 die Architektur erstellt und im Anschluss mit vollem Erfolg implementiert und integriert.
                 </p> },
-              { name: "10/2017 - heute",
+              { name: "10/2017 - 01/2020",
                 meta: "Integer GmbH",
                 id: "cv-integer",
                 description: <p>
-                Im Moment arbeite ich bei einem kleinen IT Dienstleister. Hier entwickle und pflege ich
-                interne Softwareprojekte, und bin die erste Anlaufstelle für Softwareprojekte- und Aufträge
-                von Kunden.
+                Bei dem IT Dienstleister <a href="https://integer.de/" target="_new">Integer</a> nahe Augsburg
+                entwicklte und pflegte ich interne Softwareprojekte. Zudem war ich die erste Anlaufstelle für
+                Softwareprojekte- und Aufträge von Kunden, von denen ich viele von Anfang bis Ende
+                mitdesignte und entwickelte.
                 </p> },
               { name: "01/2016 - 10/2017",
                 meta: "IT-Abteilung der Wirtschaftswissenschaftlichen Fakultät, Universität Augsburg",
@@ -122,7 +128,7 @@ const content = (
                 description: <p>
                 In einem Praktikum über den Sommer bei <a href="https://www.smartrac-group.com" target="_new">
                 Smartrac</a> konnte ich eine Server-Erweiterung für deren{' '}
-                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a>
+                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a>{' '}
                 IoT-System mit Java entwickeln, welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
                 <a href="https://www.twilio.com" target="_new">Twilio</a> zu verschicken.
                 </p>
