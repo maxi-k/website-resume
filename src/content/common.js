@@ -9,9 +9,9 @@ const content = {
         { name: "Twitter",
           path: "https://twitter.com/maxikuschewski",
           icon: "twitter" },
-        { name: "Xing",
-          path: "https://www.xing.com/profile/Maximilian_Kuschewski2",
-          icon: "xing" }
+        { name: "LinkedIn",
+          path: "https://www.linkedin.com/in/maxi-k",
+          icon: "linkedin" }
     ]
 }
 export default content
