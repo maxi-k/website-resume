@@ -1,5 +1,5 @@
 # Website Resume
-A basic resume for my website, base on react.
+A basic resume for my website, based on react.
 
 ## Tech
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

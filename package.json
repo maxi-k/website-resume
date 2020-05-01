@@ -19,7 +19,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
     "deploy-domain": "gh-pages -d build -r git@github.com:maxi-k/maxi-k.github.io -b master"
   },
   "browserslist": [
