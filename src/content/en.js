@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialLinks from 'components/SocialLinks';
+import SkillLevel from 'components/SkillLevel';
 
 const content = (
     { lang: "en",
@@ -13,52 +14,41 @@ const content = (
           items: [
               { name: "Java",
                 meta: "The Workhorse",
-                description: <p>
-                Beginning with Java as a teenager by creating and publishing
-                multiple minecraft mods, I have since gathered a lot more experience
-                creating Java applications at my <a href="#cv-smartrac">
-                Summer Internship</a> at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a> in 2015.
-                </p> },
+                description:
+                <SkillLevel level={95} githubFilter="java" >
+                I used Java and Scala in muliple private and university projects,
+                as well as at my internships at <a href="#cv-oracle">Oracle</a> and <a href="#cv-smartrac">Smartrac</a>.
+                Most of my <a href="https://github.com/maxi-k/bachelor-code" target="_new">Bachelor Thesis</a> is
+                implemented with it.
+                </SkillLevel>
+              },
               { name: "Clojure",
-                meta: "The Awesome Tech",
-                description: <p>
-                First encountering the language while writing a paper in high school, I decided to write the {' '}
-                <a href="https://github.com/maxi-k/drawer" target="_new">accompanying software</a>{' '}
-                in <a href="https://reagent-project.github.io" target="_new">ClojureScript + React</a>{' '}
-                and have been using it ever since. My most recent project in Clojure(Script) was a{' '}
-                <a href="https://github.com/maxi-k/unia-beer-game" target="_new">fullstack webapp</a>{' '}
-                for the <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Game</a>{' '}
-                at the chair for <a href="https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/pi/" target="_new">Computer Science in Manufacturing</a>{' '}
-                during my bachelor's degree.
-                </p> },
-              { name: "Web",
-                meta: "Unlimited Possibilities",
-                description: <p>
-                Leaving aside the basics (HTML, CSS, Sass, JS, ES6),
-                the frameworks (Spring, Bootstrap, Materialize, Semantic-UI) and the{' '}
-                <a href="https://en.m.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_new">ugly</a> (PHP),
-                I am really enjoying <a href="https://facebook.github.io/react/" target="_new">React</a> at
-                the moment &ndash; in fact,{' '}
-                <a href="https://github.com/maxi-k/website-resume" target="_new" title="Overkill, I know">
-                this Website is written using it</a>, as well as various other projects I've done.
-                </p> },
-              { name: "Ruby",
-                meta: "Did someone say Rails?",
-                description: <p>
-                I have developed and maintained a Rails application
-                at <a href="#cv-itwiwi">my job</a> at the IT-department of
-                the Faculty of Business and Economics at the University of Augsburg
-                for almost two Years.
-                </p> } /*,
-              { name: "Elixir",
-                meta: "Everything old is new again",
-                description: <p>
-                I only got into <a href="https://elixir-lang.org" target="_new">Elixir</a> recently,
-                and I am really enjoying it and the possibilities it opens up.
-                I have been working with the <a href="http://phoenixframework.org" target="_new">
-                Phoenix Framework</a> for the most part.
-                </p> } */
+                meta: "λ x y . x",
+                description:
+                <SkillLevel level={55} githubFilter="clojure">
+                After learning Clojure(Script) when implementing a website for 4d rotation for a paper in school,
+                I have last used it for implementing the{' '}
+                <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Game</a>{' '}
+                using fullstack Clojure and ClojureScript with websockets.
+                </SkillLevel>
+              },
+              { name: "C++",
+                meta: "Efficiency²",
+                description:
+                <SkillLevel level={70} githubFilter="C++">
+                I implemented various parts of databases in C++ for university, and used it extensively during
+                my masters thesis.
+                </SkillLevel>
+              },
+              {
+                  name: "JavaScript",
+                  meta: "hype.js",
+                  description:
+                  <SkillLevel level={90} githubFilter="JavaScript">
+                  I've implemented more frontends and backends in more frameworks than I can count,
+                  from Node + JavaScript in the browser to TypeScript and React-Native.
+                  </SkillLevel>
+              }
           ]
       }, {
           id: "Education",
