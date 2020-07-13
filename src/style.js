@@ -1,6 +1,6 @@
-import { useMediaQuery } from 'react-responsive'
+import { useMediaPredicate } from 'react-media-hook'
 
 export const usePrimaryColor = () => {
-    const prefersDark = useMediaQuery({ query: '(perfers-color-theme: dark)' })
+    const prefersDark = useMediaPredicate('(prefers-color-scheme: dark)')
     return prefersDark ? 'purple' : 'blue'
 }
