@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialLinks from 'components/SocialLinks';
-import SkillLevel from 'components/SkillLevel';
+import Link from 'components/Link'
 
 const content = (
     { lang: "en",
@@ -8,46 +8,46 @@ const content = (
       person: {
           occupation: "Student, Developer"
       },
-      resumeSections: [{
-          id: "Skills",
-          name: "Skills",
+      github: {
+          languages: 'Languages (Github)'
+      },
+      resumeSections: [
+        {
+          id: "Interests",
+          name: "Interests",
           items: [
               { name: "Java",
                 meta: "The Workhorse",
-                description:
-                <SkillLevel level={95} githubFilter="java" >
+                description: <p>
                 I used Java and Scala in muliple private and university projects,
-                as well as at my internships at <a href="#cv-oracle">Oracle</a> and <a href="#cv-smartrac">Smartrac</a>.
-                Most of my <a href="https://github.com/maxi-k/bachelor-code" target="_new">Bachelor Thesis</a> is
+                as well as at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
+                Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelor Thesis</Link> is
                 implemented with it.
-                </SkillLevel>
+                </p>
               },
               { name: "Clojure",
                 meta: "λ x y . x",
-                description:
-                <SkillLevel level={55} githubFilter="clojure">
+                description: <p>
                 After learning Clojure(Script) when implementing a website for 4d rotation for a paper in school,
                 I have last used it for implementing the{' '}
-                <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Game</a>{' '}
+                <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link>{' '}
                 using fullstack Clojure and ClojureScript with websockets.
-                </SkillLevel>
+                </p>
               },
               { name: "C++",
                 meta: "Efficiency²",
-                description:
-                <SkillLevel level={70} githubFilter="C++">
+                description: <p>
                 I implemented various parts of databases in C++ for university, and used it extensively during
                 my masters thesis.
-                </SkillLevel>
+                </p>
               },
               {
                   name: "JavaScript",
                   meta: "hype.js",
-                  description:
-                  <SkillLevel level={90} githubFilter="JavaScript">
-                  I've implemented more frontends and backends in more frameworks than I can count,
+                  description: <p>
+                      I've implemented more frontends and backends in more frameworks than I can count,
                   from Node + JavaScript in the browser to TypeScript and React-Native.
-                  </SkillLevel>
+                  </p>
               }
           ]
       }, {
@@ -57,9 +57,9 @@ const content = (
               { name: "10/2018 - 2020",
                 meta: "Master of Science, Multiple Universities" ,
                 description: <p>
-                I am part of the <a href="https://elite-se.informatik.uni-augsburg.de/" target="_new">
+                I am part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </a>, with the goal of getting my masters degree in software engineering in 2020.
+                </Link>, with the goal of getting my masters degree in software engineering in 2020.
                 As part of the program, I am a student at the University of Augsburg,
                 the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
                 </p>
@@ -68,15 +68,15 @@ const content = (
                 meta: "Bachelor of Science, University of Augsburg. Final Grade 1.56 (GPA 3.6~3.8)",
                 description: <p>
                 Until 2018, I was a student at the University of Augsburg, studying{' '}
-                <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Computer Science and Engineering</a>.
+                <Link extern href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
+               >Computer Science and Engineering</Link>.
                 </p>
               },
               { name: "09/2007 - 6/2015",
                 meta: "Abitur, Grade 1.2 (A)",
                 description: <p>
-                I went to the <a href="https://www.jakob-brucker-gymnasium.de" target="_new">
-                Jakob-Brucker-Gymnasium</a> in Kaufbeuren (Bavaria),
+                I went to the <Link extern href="https://www.jakob-brucker-gymnasium.de">
+                Jakob-Brucker-Gymnasium</Link> in Kaufbeuren (Bavaria),
                 with an emphasis on humanistic studies (Latin and Ancient Greek).
                 </p>
               }
@@ -90,9 +90,9 @@ const content = (
                 id: "cv-job-jena",
                 description: <p>
                 I am employed at the chair for{' '}
-                <a href="https://dbis1.github.io/" target="_new">Databases and Information Systems</a>{' '}
+                <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
                 at the University of Jena while writing my masters thesis there, mentored by{' '}
-                <a href="https://dbis1.github.io/team/leis.html" target="_new">Prof. Dr. Viktor Leis</a>.
+                <Link extern href="https://dbis1.github.io/team/leis.html">Prof. Dr. Viktor Leis</Link>.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",
@@ -107,7 +107,7 @@ const content = (
                 meta: "Integer IT",
                 id: "cv-integer",
                 description: <p>
-                I worked at the IT Firm <a href="https://integer.de/" target="_new">Integer</a>,
+                I worked at the IT Firm <Link extern href="https://integer.de/">Integer</Link>,
                 where I was responsible for developing and maintaining internal software projects.
                 Furthermore, I was the go-to guy when it came to software projects for customers,
                 many of which I designed and developed from start to finish.
@@ -116,7 +116,7 @@ const content = (
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Working at the <a href="http://www.wiwi.uni-augsburg.de/it/" target="_new">IT-Department</a> of
+                Working at the <Link extern href="http://www.wiwi.uni-augsburg.de/it/">IT-Department</Link> of
                 the biggest faculty on campus, my tasks included administering
                 multiple Linux systems in a virtual environment,
                 developing and maintaining a Ruby on Rails App, as well as maintaining
@@ -126,11 +126,11 @@ const content = (
                 meta: "Smartrac Technology GmbH",
                 id: "cv-smartrac",
                 description: <p>
-                In a summer internship at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a>, I got to create a server extension for their{' '}
-                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a> IoT System using Java,
+                In a summer internship at <Link extern href="https://www.smartrac-group.com">
+                Smartrac</Link>, I got to create a server extension for their{' '}
+                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT System using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
-        <a href="https://www.twilio.com" target="_new">Twilio</a>.
+                <Link extern href="https://www.twilio.com">Twilio</Link>.
                                                  </p>
       }]
   }, {

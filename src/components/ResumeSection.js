@@ -19,7 +19,6 @@ const widthDefs = {
 
 const SectionItem = ({ item }) => {
     let { textWidths, titleWidths } = widthDefs;
-    console.log(item)
     return (
         <Grid.Row className="ResumeSectionItem">
           <Grid.Column {...titleWidths}>
