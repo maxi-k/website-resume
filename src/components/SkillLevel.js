@@ -32,7 +32,8 @@ export const SkillDescription = ({ name, color, percentage }) => (
   <span className="Skill-Description">
 
     <Link extern nohighlight className="Skill-Tag"
-          href={"https://github.com/maxi-k?tab=repositories&language=" + encodeURIComponent(name)}>
+          href={"https://github.com/maxi-k?tab=repositories&q=&type=&language="
+                + encodeURIComponent(name.toLowerCase())}>
       <span className="Skill-ColorTag" style={{ backgroundColor: color }}> </span>
       <span className="Skill-NameTag">{name}</span>
       <span className="Skill-PercentageTag">{(percentage * 100).toPrecision(2)}%</span>
