@@ -14,6 +14,27 @@
 
 .SkillLevels {
     padding-top: 2em;
+    animation: fadein 500ms;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.SkillLevels-Loading {
+    height: 132px;
+}
+
+.SkillLevels-Error {
+    height: 0;
 }
 
 .Percentile-Bar {

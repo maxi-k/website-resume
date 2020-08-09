@@ -25,7 +25,10 @@ export const useSkills = () => {
                 )).filter(skill => !SKILL_TRIVIAL_LANGUAGES.has(skill.name))
                 return setSkills(sorted)
             })
-            .catch(error => console.log(error)) // TODO: display
+            .catch(error => {
+                console.log(error);
+                return setSkills({ error })
+            })
     }, [/* run only once */])
     return skills
 }

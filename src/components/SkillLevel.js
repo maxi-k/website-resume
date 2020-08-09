@@ -14,18 +14,7 @@ const MultiColorBar = ({ items }) => {
           </span>
         ))}
     </span>
-    )
-}
-
-const ColorBar = ({ color, percentage }) => {
-    const widthStyle = `${(percentage * 100).toFixed(3)}%`
-    return (
-        <span className="Percentile-Bar">
-          <span className="Percentile-Bar-Item"
-                style={{ width: widthStyle, backgroundColor: color }}>
-          </span>
-        </span>
-    )
+  )
 }
 
 export const SkillDescription = ({ name, color, percentage }) => (
@@ -42,18 +31,20 @@ export const SkillDescription = ({ name, color, percentage }) => (
 )
 
 export const SkillLevels = (props) => {
-    const skills = useSkills()
-    if (!skills || skills.length === 0) {
-        return "";
-    }
+  const skills = useSkills()
+  if (!!skills && !!skills.error) {
+    return <div className="SkillLevels-Error"/>
+  } else if (!skills || skills.length === 0) {
+    return <div className="SkillLevels-Loading"/>
+  }
   const top = skills.slice(0, 7).reduce((sum, skill) => sum + skill.codeSize, 0)
-    const perc = skills.slice(0, 7).map(skill => ({...skill, percentage: skill.codeSize / top }))
-    return (
-        <div className="SkillLevels">
-          <MultiColorBar items={perc}/>
-          <div className="SkillLevels-Descriptions">
-            { perc.map(skill => <SkillDescription key={skill.name} {...skill} />) }
-          </div>
-        </div>
-    )
+  const perc = skills.slice(0, 7).map(skill => ({...skill, percentage: skill.codeSize / top }))
+  return (
+    <div className="SkillLevels">
+      <MultiColorBar items={perc}/>
+      <div className="SkillLevels-Descriptions">
+        { perc.map(skill => <SkillDescription key={skill.name} {...skill} />) }
+      </div>
+    </div>
+  )
 }
