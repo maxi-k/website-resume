@@ -35,6 +35,16 @@
 
 .SkillLevels-Error {
     height: 0;
+    animation: error-height 500ms;
+}
+
+@keyframes error-height {
+    from {
+        height: 132px;
+    }
+    to {
+        height: 0;
+    }
 }
 
 .Percentile-Bar {
