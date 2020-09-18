@@ -1,19 +1,29 @@
-:root {
-    --dark-theme-highlight:  rgb(121, 29, 152);
-    --light-theme-highlight: #1279c6;
-}
-
 .App {
     padding-top: 2.5em;
     padding-bottom: 5em;
 }
 
+@media only screen and (min-width: 1200px) {
+    .ResumeHeader h1 { font-size: 2.0em; }
+    .ResumeSubheader p { font-size: 1.5em; }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .ResumeHeader h1 { font-size: 1.55em; }
+    .ResumeSubheader p { font-size: 1.0em; }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .ResumeHeader h1 { font-size: 2.0em; }
+    .ResumeSubheader p { font-size: 1.5em; }
+}
+
+
 .ResumeSection {
     padding-top: 2em;
 }
 
-.SkillLevels {
-    padding-top: 2em;
+.network {
     animation: fadein 500ms;
 }
 
@@ -29,23 +39,6 @@
     }
 }
 
-.SkillLevels-Loading {
-    height: 132px;
-}
-
-.SkillLevels-Error {
-    height: 0;
-    animation: error-height 500ms;
-}
-
-@keyframes error-height {
-    from {
-        height: 132px;
-    }
-    to {
-        height: 0;
-    }
-}
 
 .Percentile-Bar {
     display: flex;
@@ -66,6 +59,28 @@
     border-radius: 6px;
 }
 
+.SkillLevels {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.SkillLevels-Loading {
+    height: 132px;
+}
+
+.SkillLevels-Error {
+    height: 0;
+    animation: error-height 500ms;
+}
+
+@keyframes error-height {
+    from {
+        height: 132px;
+    }
+    to {
+        height: 0;
+    }
+}
 
 .SkillLevels-Descriptions {
     display: flex;
@@ -89,9 +104,7 @@
     display: inline-block;
 }
 
-.Skill-NameTag {
-
-}
+.Skill-NameTag {}
 
 .Skill-PercentageTag {
     color: rgba(0, 0, 0, 0.4);
@@ -107,31 +120,14 @@ a.nohighlight:not(:hover) {
 }
 
 a:not(:hover) {
-    color: var(--light-theme-highlight);
+    color: #1279c6;
 }
 
 a.icon-link:not(:hover) {
     color: rgba(0,0,0,.4);
 }
 
-.Portrait {
-    width: 4rem;
-    height: 4rem;
-}
-
-@media only screen and (min-width: 768px) {
-    .InfoCard-Wrapper {
-        top: 2.5em;
-        position: sticky;
-    }
-}
-
 @media only screen and (max-width: 767px) {
-    .InfoCard-Wrapper {
-        position: relative;
-        margin-bottom: 2em;
-    }
-
     .ResumeSectionItem {
         margin-bottom: 3.2rem !important;
     }
@@ -147,9 +143,8 @@ a.icon-link:not(:hover) {
     .App {
         display: grid !important;
         grid-template-areas:
-            "header card"
-            "subheader card"
-            "skills card"
+            "header avatar"
+            "skills education"
             "skills education"
             "skills education"
             "working-experience certificates"
@@ -162,8 +157,8 @@ a.icon-link:not(:hover) {
 
     .InfoCard-Wrapper {grid-area: card;}
     .InfoCard-Wrapper .extra.content { display: none }
+    .ResumeAvatar { grid-area: avatar; }
     .ResumeHeader { grid-area: header; }
-    .ResumeSubheader { grid-area: subheader; }
     .ResumeSection-Skills { grid-area: skills; }
     .ResumeSection-Education { grid-area: education; }
     .ResumeSection-Working-Experience { grid-area: working-experience; }

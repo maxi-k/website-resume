@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import { getContent } from 'content';
-import Link from 'components/Link'
+import { Link } from 'components/Link'
 
 
 const rawLinks = getContent('social'),
@@ -11,12 +11,10 @@ const rawLinks = getContent('social'),
               <Icon name={item.icon} size="large" />
               </Link>)
 
-const SocialLinks = () => {
+export const SocialLinks = () => {
     return (
         <div className="SocialLinks">
           {linkList}
         </div>
     );
 }
-
-export default SocialLinks;

@@ -10,9 +10,14 @@ const SKILL_TRIVIAL_LANGUAGES = new Set([
     "CSS",
 ])
 const SKILL_API_URL = "https://okhkp2o8fd.execute-api.eu-central-1.amazonaws.com/default/"
+const cache = {}
 export const useSkills = () => {
-    const [skills, setSkills] = useState(null);
+    const [skills, setSkills] = useState(cache.current);
     useEffect(() => {
+        console.log(cache)
+        if (!!cache.current) {
+            return setSkills(cache.current)
+        }
         fetch(SKILL_API_URL, {
             method: "POST",
             body: JSON.stringify({ top: 30, exclude: SKILL_EXCLUDED_REPOS })
@@ -23,7 +28,8 @@ export const useSkills = () => {
                     s1.codeSize === s2.codeSize ? 0 :
                         s1.codeSize < s2.codeSize ? 1 : -1
                 )).filter(skill => !SKILL_TRIVIAL_LANGUAGES.has(skill.name))
-                return setSkills(sorted)
+                cache.current = { cached: true, skills: sorted };
+                return setSkills({ cached: false, skills: sorted })
             })
             .catch(error => {
                 console.log(error);

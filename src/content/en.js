@@ -1,6 +1,7 @@
 import React from 'react';
-import SocialLinks from 'components/SocialLinks';
-import Link from 'components/Link'
+import { SocialLinks } from 'components/SocialLinks';
+import { Link } from 'components/Link'
+import { SkillLevels } from 'components/SkillLevel'
 
 const content = (
     { lang: "en",
@@ -14,6 +15,7 @@ const content = (
       resumeSections: [{
         id: "Languages",
         name: "Languages",
+        header: <SkillLevels />,
         items: [
           { name: "Java & Scala",
             meta: "Sounds professional",

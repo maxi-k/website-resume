@@ -10,4 +10,3 @@ export const Link = ({ children, extern = false, nohighlight = true, className, 
         : <a className={joinedClass} {...props}>{children}</a>;
 }
 
-export default Link

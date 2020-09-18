@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'components/Link'
+import { Link } from 'components/Link'
 import { useSkills } from 'api'
 
 const MultiColorBar = ({ items }) => {
@@ -31,7 +31,11 @@ export const SkillDescription = ({ name, color, percentage, uriKey = null }) => 
 )
 
 export const SkillLevels = (props) => {
-  const skills = useSkills()
+  const data = useSkills()
+  if (!data) {
+    return <div className="SkillLevels-Loading"/>
+  }
+  const { cached, skills } = data;
   if (!!skills && !!skills.error) {
     return <div className="SkillLevels-Error"/>
   } else if (!skills || skills.length === 0) {
@@ -42,9 +46,8 @@ export const SkillLevels = (props) => {
   const top = perc.filter(skill => skill.percentage >= 0.05);
   const restPerc = 1 - top.reduce((sum, skill) => sum + skill.percentage, 0);
   top.push({ name: "Others", color: "#eeeeee", percentage: restPerc, uriKey: " " })
-  console.log(top)
   return (
-    <div className="SkillLevels">
+    <div className={`SkillLevels ${ cached || 'network' }`}>
       <MultiColorBar items={top}/>
       <div className="SkillLevels-Descriptions">
         { top.map(skill => <SkillDescription key={skill.name} {...skill} />) }
