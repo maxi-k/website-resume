@@ -4,9 +4,10 @@ import { Grid, Header, Divider } from 'semantic-ui-react';
 const Section = ({ id, name, children }) => {
     return (
         <div className={"ResumeSection ResumeSection-" + id}>
-          <Divider horizontal section as="h2">
-            {name}
-          </Divider>
+          { name &&
+            <Divider horizontal section as="h2">
+              {name}
+            </Divider> }
           {children}
         </div>
     );
@@ -36,11 +37,12 @@ const SectionItem = ({ item }) => {
     );
 }
 
-const ItemizedSection = ({ id, name, items }) => {
+const ItemizedSection = ({ id, name, header, items }) => {
     const renderedItems = items.map(
         (item) => <SectionItem key={item.name} item={item} />)
     return (
         <Section name={name} id={id}>
+          {header}
           <Grid stackable>
             {renderedItems}
           </Grid>
@@ -48,9 +50,10 @@ const ItemizedSection = ({ id, name, items }) => {
     );
 }
 
-const FlowingSection = ({ id, name, content }) => {
+const FlowingSection = ({ id, name, header, content }) => {
     return (
         <Section name={name} id={id}>
+          {header}
           {content}
         </Section>
     );

@@ -17,12 +17,12 @@ const MultiColorBar = ({ items }) => {
   )
 }
 
-export const SkillDescription = ({ name, color, percentage }) => (
+export const SkillDescription = ({ name, color, percentage, uriKey = null }) => (
   <span className="Skill-Description">
 
     <Link extern nohighlight className="Skill-Tag"
           href={"https://github.com/maxi-k?tab=repositories&q=&type=&language="
-                + encodeURIComponent(name.toLowerCase())}>
+                + encodeURIComponent((uriKey || name.toLowerCase()).trim())}>
       <span className="Skill-ColorTag" style={{ backgroundColor: color }}> </span>
       <span className="Skill-NameTag">{name}</span>
       <span className="Skill-PercentageTag">{(percentage * 100).toPrecision(2)}%</span>
@@ -37,13 +37,17 @@ export const SkillLevels = (props) => {
   } else if (!skills || skills.length === 0) {
     return <div className="SkillLevels-Loading"/>
   }
-  const top = skills.slice(0, 7).reduce((sum, skill) => sum + skill.codeSize, 0)
-  const perc = skills.slice(0, 7).map(skill => ({...skill, percentage: skill.codeSize / top }))
+  const sum = skills.reduce((sum, skill) => sum + skill.codeSize, 0)
+  const perc = skills.map(skill => ({...skill, percentage: skill.codeSize / sum }))
+  const top = perc.filter(skill => skill.percentage >= 0.05);
+  const restPerc = 1 - top.reduce((sum, skill) => sum + skill.percentage, 0);
+  top.push({ name: "Others", color: "#eeeeee", percentage: restPerc, uriKey: " " })
+  console.log(top)
   return (
     <div className="SkillLevels">
-      <MultiColorBar items={perc}/>
+      <MultiColorBar items={top}/>
       <div className="SkillLevels-Descriptions">
-        { perc.map(skill => <SkillDescription key={skill.name} {...skill} />) }
+        { top.map(skill => <SkillDescription key={skill.name} {...skill} />) }
       </div>
     </div>
   )

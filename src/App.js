@@ -3,7 +3,7 @@ import React from 'react';
 import { T, t } from 'content'
 import { useMediaPredicate } from 'react-media-hook'
 import { Grid, Container } from 'semantic-ui-react'
-import MainContent, { ContentHeader, Sections } from 'components/MainContent'
+import { ResumeContent, ContentHeader, Sections } from 'components/MainContent'
 import Sidebar from 'components/Sidebar'
 
 const widthDefs = {
@@ -20,14 +20,19 @@ const PrintApp = () => (
 )
 
 const ScreenApp = ({ mainWidths, sideWidths }) => (
-    <Container className="App">
-      <Grid stackable relaxed padded reversed="mobile" className="App-Grid">
-        <Grid.Column {...mainWidths} className="MainContent-Wrapper" >
-          <MainContent />
-        </Grid.Column>
-        <Grid.Column {...sideWidths} className="Sidebar-Wrapper" >
-          <Sidebar />
-        </Grid.Column>
+   <Container className="App">
+      <Grid stackable relaxed padded className="App-Grid">
+        <Grid.Row columns={1}>
+          <ContentHeader/>
+        </Grid.Row>
+        <Grid.Row columns={2}>
+          <Grid.Column {...mainWidths} className="MainContent-Wrapper" >
+            <ResumeContent />
+          </Grid.Column>
+          <Grid.Column {...sideWidths} className="Sidebar-Wrapper" >
+            <Sidebar />
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
     </Container>
 )

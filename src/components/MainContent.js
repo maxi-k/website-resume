@@ -6,37 +6,37 @@ import { SkillLevels } from 'components/SkillLevel'
 import { ItemizedSection, FlowingSection } from "components/ResumeSection";
 import LanguageButtons from 'components/LanguageButtons'
 
-const ContentHeader = () => (
+export const ContentHeader = () => (
+  <Container>
     <Header className={`ResumeHeader ${useScheme().className}`} size="huge" textAlign="center">
       {t('title')}
       <Header.Subheader>{t('person.name')}</Header.Subheader>
     </Header>
+    <Container className="ResumeSubheader" textAlign='center'>
+      <LanguageButtons />
+      <Divider horizontal section as="h2" />
+      <SkillLevels />
+    </Container>
+  </Container>
 )
 
-const Sections = ({ sections }) => (
+export const Sections = ({ sections }) => (
     sections.map((section) => {
         if (section.items) {
             return <ItemizedSection key={section.id} id={section.id}
-                                    name={section.name} items={section.items} />
+                                    header={section.header} name={section.name}
+                                    items={section.items} />
         } else {
             return <FlowingSection key={section.id} id={section.id}
-                                   name={section.name} content={section.content} />
+                                   header={section.header} name={section.name}
+                                   content={section.content} />
         }
     })
 )
 
-export { ContentHeader, Sections }
-
-const MainContent = () => {
+export const ResumeContent = () => {
     return (<Container>
-              <ContentHeader />
-              <Container textAlign='center'>
-                <LanguageButtons />
-                <Divider horizontal section as="h2" />
-                <SkillLevels />
-              </Container>
               <Sections sections={t('resumeSections')} />
             </Container>);
 }
 
-export default MainContent

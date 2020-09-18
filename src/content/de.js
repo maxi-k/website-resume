@@ -9,43 +9,6 @@ const content = (
           occupation: "Student, Softwareentwickler"
       },
       resumeSections: [{
-          id: "Interests",
-          name: "Interessen",
-          items: [
-              { name: "Java & Scala",
-                meta: "Sounds professional",
-                description: <p>
-                Ich habe Java und Scala sowohl in einigen privaten und universitären Projekten verwendet,
-                also auch während meiner Praktika bei <Link href="cv-oracle">Oracle</Link> und <Link href="#cv-smartrac">Smartrac</Link>.
-                Der Großteil meiner <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelorarbeit</Link> ist in
-                Java und <Link extern href="https://projectreactor.io/">Reactive Streams</Link> implementiert.
-                </p> },
-              { name: "Clojure",
-                meta: "λ x y . x",
-                description: <p>
-                Initial lernte ich Clojure(Script) beim Implementieren
-                einer <Link extern href="https://github.com/maxi-k/drawer">Webseite über 4D-Rotation</Link> für
-                ein Paper in der Schule kennen.
-                Mein jüngstes Lisp-Projekt war
-                das <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> in
-                full-stack Clojure und ClojureScript unter Verwendung von Websockets.
-                </p> },
-              { name: "C++",
-                meta: "Efficiency²",
-                description: <p>
-                Im Rahmen von Vorlesungen und Seminaren habe ich verschiedene Teile von Datenbanken in C++ implementiert.
-                Auch während meiner Masterarbeit kam die Sprache vielseitig zum Einsatz.
-                </p>
-              },
-            { name: "JavaScript",
-              meta: "hype.js",
-              description: <p>
-              Ich habe mehr Frontends und Backends mit mehr Frameworks und Bibliotheken implementiert als ich mich erinnern kann,
-              reichend von Node und Angular bis hin zu React-Native mit TypeScript.
-              </p>
-            }
-          ]
-      }, {
           id: "Education",
           name: "Ausbildung",
           items: [
@@ -127,6 +90,42 @@ const content = (
                 <Link extern href="https://www.twilio.com">Twilio</Link> zu verschicken.
                 </p>
               }]
+      }, {
+          id: "Programming",
+          name: "Programming",
+          items: [
+            { name: "Java & Scala",
+              meta: "Sounds professional",
+              description: <p>
+              Ich habe Java und Scala sowohl in einigen privaten und universitären Projekten verwendet,
+              also auch während meiner Praktika bei <Link href="cv-oracle">Oracle</Link> und <Link href="#cv-smartrac">Smartrac</Link>.
+              Der Großteil meiner <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelorarbeit</Link> ist in
+              Java und <Link extern href="https://projectreactor.io/">Reactive Streams</Link> implementiert.
+              </p> },
+            { name: "Clojure",
+              meta: "λ x y . x",
+              description: <p>
+              Initial lernte ich Clojure(Script) beim Implementieren
+              einer <Link extern href="https://github.com/maxi-k/drawer">Webseite über 4D-Rotation</Link> für
+              ein Paper in der Schule kennen.
+              Mein jüngstes Lisp-Projekt war
+              das <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> in
+              full-stack Clojure und ClojureScript unter Verwendung von Websockets.
+              </p> },
+            { name: "C++",
+              meta: "Efficiency²",
+              description: <p>
+              Im Rahmen von Vorlesungen und Seminaren habe ich verschiedene Teile von Datenbanken in C++ implementiert.
+              Auch während meiner Masterarbeit kam die Sprache vielseitig zum Einsatz.
+              </p> },
+            { name: "JavaScript",
+              meta: "hype.js",
+              description: <p>
+              Ich habe mehr Frontends und Backends mit mehr Frameworks und Bibliotheken implementiert als ich mich erinnern kann,
+              reichend von Node und Angular bis hin zu React-Native mit TypeScript.
+              </p>
+            }
+          ]
       }, {
           id: "Certificates",
           name: "Zertifikate",

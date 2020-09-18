@@ -11,46 +11,45 @@ const content = (
       github: {
           languages: 'Languages (Github)'
       },
-      resumeSections: [
-        {
-          id: "Interests",
-          name: "Interests",
-          items: [
-              { name: "Java & Scala",
-                meta: "Sounds professional",
-                description: <p>
-                I used Java and Scala in muliple private and university projects,
-                and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
-                Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
-                implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
-                </p>
-              },
-              { name: "Clojure",
-                meta: "λ x y . x",
-                description: <p>
-                After learning Clojure(Script) when implementing
-                a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
-                I have last used it for implementing
-                the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
-                fullstack Clojure and ClojureScript with websockets.
-                </p>
-              },
-              { name: "C++",
-                meta: "Efficiency²",
-                description: <p>
-                I implemented various parts of databases in C++ for university, and used it extensively during
-                my masters thesis.
-                </p>
-              },
-              { name: "JavaScript",
-                meta: "hype.js",
-                description: <p>
-                  I've implemented more frontends and backends using more frameworks and libraries than I can count,
+      resumeSections: [{
+        id: "Languages",
+        name: "Languages",
+        items: [
+          { name: "Java & Scala",
+            meta: "Sounds professional",
+            description: <p>
+            I used Java and Scala in muliple private and university projects,
+            and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
+            Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
+            implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
+            </p>
+          },
+          { name: "Clojure",
+            meta: "λ x y . x",
+            description: <p>
+            After learning Clojure(Script) when implementing
+            a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
+            I have last used it for implementing
+            the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
+            fullstack Clojure and ClojureScript with websockets.
+            </p>
+          },
+          { name: "C++",
+            meta: "Efficiency²",
+            description: <p>
+            I implemented various parts of databases in C++ for university, and used it extensively during
+            my masters thesis.
+            </p>
+          },
+          { name: "JavaScript",
+            meta: "hype.js",
+            description: <p>
+            I've implemented more frontends and backends using more frameworks and libraries than I can count,
                   from Node plus Angular to React-Native with TypeScript.
                 </p>
               }
           ]
-      }, {
+  }, {
           id: "Education",
           name: "Education",
           items: [
@@ -131,7 +130,7 @@ const content = (
                 <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT system using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link>.
-                                                 </p>
+                </p>
       }]
   }, {
     id: "Certificates",
@@ -143,12 +142,12 @@ const content = (
         In 2015 I acquired the Cambridge Advanced English Certificate
         in ESOL International, reaching Grade A, which corresponds to the
         Council of Europe Level C2.
-                  </p>
-    }]
+        </p>
+      }]
   }, {
     id: "Contact",
     name: "Contact",
     content: <SocialLinks />
-}]})
+  }]})
 
 export default content;
