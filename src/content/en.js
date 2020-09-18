@@ -117,7 +117,7 @@ const content = (
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Working at the <Link extern href="http://www.wiwi.uni-augsburg.de/it/">IT-Department</Link> of
+                Working at the <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Department</Link> of
                 the biggest faculty on campus, my tasks included administering
                 multiple Linux systems in a virtual environment,
                 developing and maintaining a Ruby on Rails App, as well as maintaining

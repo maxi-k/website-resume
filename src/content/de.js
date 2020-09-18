@@ -112,7 +112,7 @@ const content = (
                 meta: "IT-Abteilung der Wirtschaftswissenschaftlichen Fakultät, Universität Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Meine Aufgaben in der <Link extern href="http://www.wiwi.uni-augsburg.de/it/">IT-Abteilung</Link> der
+                Meine Aufgaben in der <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Abteilung</Link> der
                 größten Fakultät auf dem Campus waren unteranderem die Administration mehrerer
                 Linux-Systeme in einer virtuellen Umgebung, die Entwicklung und Pflege eine Ruby-on-Rails Applikation,
                 so wie die Pflege des Monitoring-Systems für die 900+ Geräte im Gebäude.
