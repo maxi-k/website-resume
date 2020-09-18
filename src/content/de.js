@@ -12,45 +12,38 @@ const content = (
           id: "Interests",
           name: "Interessen",
           items: [
-              { name: "Java",
-                meta: "The Workhorse",
+              { name: "Java & Scala",
+                meta: "Sounds professional",
                 description: <p>
-                Seitdem ich als Jugendlicher durch das Erstellen und Veröffentlichen
-                mehrerer Minecraft Mods in Java eingestiegen bin, habe ich bei
-                während meines <Link href="#cv-smartrac">Praktikums</Link> bei
-                {' '}<Link extern href="https://www.smartrac-group.com">Smartrac</Link>{' '}
-                2015 einiges an Erfahrung zum Thema Java-Entwicklung gesammelt.
+                Ich habe Java und Scala sowohl in einigen privaten und universitären Projekten verwendet,
+                also auch während meiner Praktika bei <Link href="cv-oracle">Oracle</Link> und <Link href="#cv-smartrac">Smartrac</Link>.
+                Der Großteil meiner <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelorarbeit</Link> ist in
+                Java und <Link extern href="https://projectreactor.io/">Reactive Streams</Link> implementiert.
                 </p> },
               { name: "Clojure",
-                meta: "The Awesome Tech",
+                meta: "λ x y . x",
                 description: <p>
-                Nach meinem initialen Kontakt mit der Sprache bei einer Seminararbeit im Gymnasium,
-                entschied ich mich kurzerhand die
-                {' '}<Link extern href="https://github.com/maxi-k/drawer">dazugehörige Software</Link>{' '}
-                in <Link extern href="https://reagent-project.github.io">ClojureScript + React</Link>{' '}
-                zu schreiben. Mein letztes Projekt in Clojure(Script) war eine{' '}
-                <Link extern href="https://github.com/maxi-k/unia-beer-game">full-stack Webapplikation</Link>{' '}
-                für das <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Games</Link>{' '}
-                beim <Link extern href="https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/pi/">Lehrstuhl für Produktionsinformatik</Link>{' '}
-                während des Bachelors.
+                Initial lernte ich Clojure(Script) beim Implementieren
+                einer <Link extern href="https://github.com/maxi-k/drawer">Webseite über 4D-Rotation</Link> für
+                ein Paper in der Schule kennen.
+                Mein jüngstes Lisp-Projekt war
+                das <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> in
+                full-stack Clojure und ClojureScript unter Verwendung von Websockets.
                 </p> },
-              { name: "Web",
-                meta: "Unlimited Possibilities",
+              { name: "C++",
+                meta: "Efficiency²",
                 description: <p>
-                Neben den Grundlagen (HTML, CSS, Sass, JS, ES6), den Frameworks
-                (Spring, Bootstrap, Materialize, Semantic-UI) und dem nötigen Übel (PHP),
-                arbeite ich heutzutage hauptsächlich mit
-                {' '}<Link extern href="https://facebook.github.io/react/">React</Link>{' '} &ndash;
-                neben einigen anderen Projekten ist <Link extern href="https://github.com/maxi-k/website-resume" title="Ich weiß, Overkill">
-                diese Webseite</Link> zum Beispiel darin geschrieben.
-                </p> },
-              { name: "Ruby",
-                meta: "Did someone say Rails?",
-                description: <p>
-                Bei <Link href="#cv-itwiwi">meinem Job</Link> an der Wirtschaftswissenschaftlichen Fakultät
-                der Universität Augsburg habe über knapp 2 Jahre hinweg
-                eine Rails Applikation entwickelt und gepflegt.
-                </p> }
+                Im Rahmen von Vorlesungen und Seminaren habe ich verschiedene Teile von Datenbanken in C++ implementiert.
+                Auch während meiner Masterarbeit kam die Sprache vielseitig zum Einsatz.
+                </p>
+              },
+            { name: "JavaScript",
+              meta: "hype.js",
+              description: <p>
+              Ich habe mehr Frontends und Backends mit mehr Frameworks und Bibliotheken implementiert als ich mich erinnern kann,
+              reichend von Node und Angular bis hin zu React-Native mit TypeScript.
+              </p>
+            }
           ]
       }, {
           id: "Education",

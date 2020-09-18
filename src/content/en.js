@@ -16,22 +16,23 @@ const content = (
           id: "Interests",
           name: "Interests",
           items: [
-              { name: "Java",
-                meta: "The Workhorse",
+              { name: "Java & Scala",
+                meta: "Sounds professional",
                 description: <p>
                 I used Java and Scala in muliple private and university projects,
-                as well as at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
-                Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelor Thesis</Link> is
-                implemented with it.
+                and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
+                Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
+                implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
                 </p>
               },
               { name: "Clojure",
                 meta: "λ x y . x",
                 description: <p>
-                After learning Clojure(Script) when implementing a website for 4d rotation for a paper in school,
-                I have last used it for implementing the{' '}
-                <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link>{' '}
-                using fullstack Clojure and ClojureScript with websockets.
+                After learning Clojure(Script) when implementing
+                a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
+                I have last used it for implementing
+                the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
+                fullstack Clojure and ClojureScript with websockets.
                 </p>
               },
               { name: "C++",
@@ -41,13 +42,12 @@ const content = (
                 my masters thesis.
                 </p>
               },
-              {
-                  name: "JavaScript",
-                  meta: "hype.js",
-                  description: <p>
-                      I've implemented more frontends and backends in more frameworks than I can count,
-                  from Node + JavaScript in the browser to TypeScript and React-Native.
-                  </p>
+              { name: "JavaScript",
+                meta: "hype.js",
+                description: <p>
+                  I've implemented more frontends and backends using more frameworks and libraries than I can count,
+                  from Node plus Angular to React-Native with TypeScript.
+                </p>
               }
           ]
       }, {
@@ -128,7 +128,7 @@ const content = (
                 description: <p>
                 In a summer internship at <Link extern href="https://www.smartrac-group.com">
                 Smartrac</Link>, I got to create a server extension for their{' '}
-                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT System using Java,
+                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT system using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link>.
                                                  </p>
