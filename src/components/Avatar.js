@@ -3,5 +3,5 @@ import React from 'react';
 import { Image } from 'semantic-ui-react';
 
 export const Avatar = () => (
-  <Image src={portrait} fluid circular/>
+  <Image className="Avatar" src={portrait} fluid circular/>
 )

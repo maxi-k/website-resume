@@ -13,7 +13,7 @@ export const LanguageButtons = () => {
         onClick={() => setLanguage(name)}
         content={name} />})
     return (
-        <Button.Group>
+        <Button.Group className="LanguageButtons">
           {buttons}
         </Button.Group>
     );

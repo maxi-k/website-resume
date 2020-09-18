@@ -1,6 +1,5 @@
 import { t } from 'content';
 import React from 'react';
-import { Container } from 'semantic-ui-react';
 import { ItemizedSection, FlowingSection } from "components/ResumeSection";
 
 export const Sections = ({ sections }) => (
@@ -18,8 +17,6 @@ export const Sections = ({ sections }) => (
 )
 
 export const ResumeContent = () => {
-    return (<Container>
-              <Sections sections={t('resumeSections')} />
-            </Container>);
+    return <Sections sections={t('resumeSections')} />;
 }
 

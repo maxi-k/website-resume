@@ -18,7 +18,6 @@
     .ResumeSubheader p { font-size: 1.5em; }
 }
 
-
 .ResumeSection {
     padding-top: 2em;
 }
@@ -38,7 +37,6 @@
         transform: translate3d(0, 0, 0);
     }
 }
-
 
 .Percentile-Bar {
     display: flex;
@@ -144,9 +142,8 @@ a.icon-link:not(:hover) {
         display: grid !important;
         grid-template-areas:
             "header avatar"
-            "skills education"
-            "skills education"
-            "skills education"
+            "languages education"
+            "languages education"
             "working-experience certificates"
             "working-experience contact";
         grid-template-columns: 2fr 1fr;
@@ -154,12 +151,18 @@ a.icon-link:not(:hover) {
         padding: 2.0rem;
     }
 
+    .LanguageButtons, .SkillLevels {
+        display: none !important;
+    }
 
-    .InfoCard-Wrapper {grid-area: card;}
-    .InfoCard-Wrapper .extra.content { display: none }
-    .ResumeAvatar { grid-area: avatar; }
+    .Avatar {
+        grid-area: avatar;
+        width: 10em !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ResumeHeader { grid-area: header; }
-    .ResumeSection-Skills { grid-area: skills; }
+    .ResumeSection-Languages { grid-area: languages; }
     .ResumeSection-Education { grid-area: education; }
     .ResumeSection-Working-Experience { grid-area: working-experience; }
     .ResumeSection-Certificates { grid-area: certificates; }

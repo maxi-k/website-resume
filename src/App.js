@@ -17,8 +17,8 @@ const widthDefs = {
 const PrintApp = () => (
     <Container className="App">
       <ContentHeader/>
-      <ResumeContent/>
       <Avatar />
+      <ResumeContent/>
     </Container>
 )
 
@@ -34,8 +34,7 @@ const ScreenApp = ({ mainWidths, sideWidths, fullWidths, restWidths }) => {
             { displayAside &&
               <Grid.Column {...sideWidths}>
                 <Avatar />
-              </Grid.Column>
-            }
+              </Grid.Column> }
           </Grid.Row>
           <Grid.Row>
             <Grid.Column {...fullWidths}>
@@ -51,7 +50,7 @@ const ScreenApp = ({ mainWidths, sideWidths, fullWidths, restWidths }) => {
 }
 
 const RawApp = () => {
-    const isPrint = useMediaPredicate("(only print)");
+    const isPrint = useMediaPredicate("print");
     return isPrint ? <PrintApp /> : <ScreenApp {...widthDefs} />
 }
 
