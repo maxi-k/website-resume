@@ -1,14 +1,15 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import { getContent } from 'content';
+import Link from 'components/Link'
 
 
 const rawLinks = getContent('social'),
       linkList = rawLinks.map(
           (item, idx) =>
-              <a key={item.name} title={item.name} name={item.name} href={item.path}>
+              <Link className="icon-link" key={item.name} title={item.name} name={item.name} href={item.path}>
               <Icon name={item.icon} size="large" />
-              </a>)
+              </Link>)
 
 const SocialLinks = () => {
     return (

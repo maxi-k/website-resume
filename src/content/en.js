@@ -1,5 +1,6 @@
 import React from 'react';
 import SocialLinks from 'components/SocialLinks';
+import Link from 'components/Link'
 
 const content = (
     { lang: "en",
@@ -7,58 +8,47 @@ const content = (
       person: {
           occupation: "Student, Developer"
       },
-      resumeSections: [{
-          id: "Skills",
-          name: "Skills",
+      github: {
+          languages: 'Languages (Github)'
+      },
+      resumeSections: [
+        {
+          id: "Interests",
+          name: "Interests",
           items: [
-              { name: "Java",
-                meta: "The Workhorse",
+              { name: "Java & Scala",
+                meta: "Sounds professional",
                 description: <p>
-                Beginning with Java as a teenager by creating and publishing
-                multiple minecraft mods, I have since gathered a lot more experience
-                creating Java applications at my <a href="#cv-smartrac">
-                Summer Internship</a> at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a> in 2015.
-                </p> },
+                I used Java and Scala in muliple private and university projects,
+                and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
+                Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
+                implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
+                </p>
+              },
               { name: "Clojure",
-                meta: "The Awesome Tech",
+                meta: "λ x y . x",
                 description: <p>
-                First encountering the language while writing a paper in high school, I decided to write the {' '}
-                <a href="https://github.com/maxi-k/drawer" target="_new">accompanying software</a>{' '}
-                in <a href="https://reagent-project.github.io" target="_new">ClojureScript + React</a>{' '}
-                and have been using it ever since. My most recent project in Clojure(Script) was a{' '}
-                <a href="https://github.com/maxi-k/unia-beer-game" target="_new">fullstack webapp</a>{' '}
-                for the <a href="https://en.wikipedia.org/wiki/Beer_distribution_game" target="_new">Beer Distribution Game</a>{' '}
-                at the chair for <a href="https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/pi/" target="_new">Computer Science in Manufacturing</a>{' '}
-                during my bachelor's degree.
-                </p> },
-              { name: "Web",
-                meta: "Unlimited Possibilities",
+                After learning Clojure(Script) when implementing
+                a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
+                I have last used it for implementing
+                the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
+                fullstack Clojure and ClojureScript with websockets.
+                </p>
+              },
+              { name: "C++",
+                meta: "Efficiency²",
                 description: <p>
-                Leaving aside the basics (HTML, CSS, Sass, JS, ES6),
-                the frameworks (Spring, Bootstrap, Materialize, Semantic-UI) and the{' '}
-                <a href="https://en.m.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly" target="_new">ugly</a> (PHP),
-                I am really enjoying <a href="https://facebook.github.io/react/" target="_new">React</a> at
-                the moment &ndash; in fact,{' '}
-                <a href="https://github.com/maxi-k/website-resume" target="_new" title="Overkill, I know">
-                this Website is written using it</a>, as well as various other projects I've done.
-                </p> },
-              { name: "Ruby",
-                meta: "Did someone say Rails?",
+                I implemented various parts of databases in C++ for university, and used it extensively during
+                my masters thesis.
+                </p>
+              },
+              { name: "JavaScript",
+                meta: "hype.js",
                 description: <p>
-                I have developed and maintained a Rails application
-                at <a href="#cv-itwiwi">my job</a> at the IT-department of
-                the Faculty of Business and Economics at the University of Augsburg
-                for almost two Years.
-                </p> } /*,
-              { name: "Elixir",
-                meta: "Everything old is new again",
-                description: <p>
-                I only got into <a href="https://elixir-lang.org" target="_new">Elixir</a> recently,
-                and I am really enjoying it and the possibilities it opens up.
-                I have been working with the <a href="http://phoenixframework.org" target="_new">
-                Phoenix Framework</a> for the most part.
-                </p> } */
+                  I've implemented more frontends and backends using more frameworks and libraries than I can count,
+                  from Node plus Angular to React-Native with TypeScript.
+                </p>
+              }
           ]
       }, {
           id: "Education",
@@ -67,9 +57,9 @@ const content = (
               { name: "10/2018 - 2020",
                 meta: "Master of Science, Multiple Universities" ,
                 description: <p>
-                I am part of the <a href="https://elite-se.informatik.uni-augsburg.de/" target="_new">
+                I am part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </a>, with the goal of getting my masters degree in software engineering in 2020.
+                </Link>, with the goal of getting my masters degree in software engineering in 2020.
                 As part of the program, I am a student at the University of Augsburg,
                 the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
                 </p>
@@ -78,15 +68,15 @@ const content = (
                 meta: "Bachelor of Science, University of Augsburg. Final Grade 1.56 (GPA 3.6~3.8)",
                 description: <p>
                 Until 2018, I was a student at the University of Augsburg, studying{' '}
-                <a href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
-                target="_new">Computer Science and Engineering</a>.
+                <Link extern href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
+               >Computer Science and Engineering</Link>.
                 </p>
               },
               { name: "09/2007 - 6/2015",
                 meta: "Abitur, Grade 1.2 (A)",
                 description: <p>
-                I went to the <a href="https://www.jakob-brucker-gymnasium.de" target="_new">
-                Jakob-Brucker-Gymnasium</a> in Kaufbeuren (Bavaria),
+                I went to the <Link extern href="https://www.jakob-brucker-gymnasium.de">
+                Jakob-Brucker-Gymnasium</Link> in Kaufbeuren (Bavaria),
                 with an emphasis on humanistic studies (Latin and Ancient Greek).
                 </p>
               }
@@ -100,9 +90,9 @@ const content = (
                 id: "cv-job-jena",
                 description: <p>
                 I am employed at the chair for{' '}
-                <a href="https://dbis1.github.io/" target="_new">Databases and Information Systems</a>{' '}
+                <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
                 at the University of Jena while writing my masters thesis there, mentored by{' '}
-                <a href="https://dbis1.github.io/team/leis.html" target="_new">Prof. Dr. Viktor Leis</a>.
+                <Link extern href="https://dbis1.github.io/team/leis.html">Prof. Dr. Viktor Leis</Link>.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",
@@ -117,7 +107,7 @@ const content = (
                 meta: "Integer IT",
                 id: "cv-integer",
                 description: <p>
-                I worked at the IT Firm <a href="https://integer.de/" target="_new">Integer</a>,
+                I worked at the IT Firm <Link extern href="https://integer.de/">Integer</Link>,
                 where I was responsible for developing and maintaining internal software projects.
                 Furthermore, I was the go-to guy when it came to software projects for customers,
                 many of which I designed and developed from start to finish.
@@ -126,7 +116,7 @@ const content = (
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Working at the <a href="http://www.wiwi.uni-augsburg.de/it/" target="_new">IT-Department</a> of
+                Working at the <Link extern href="http://www.wiwi.uni-augsburg.de/it/">IT-Department</Link> of
                 the biggest faculty on campus, my tasks included administering
                 multiple Linux systems in a virtual environment,
                 developing and maintaining a Ruby on Rails App, as well as maintaining
@@ -136,11 +126,11 @@ const content = (
                 meta: "Smartrac Technology GmbH",
                 id: "cv-smartrac",
                 description: <p>
-                In a summer internship at <a href="https://www.smartrac-group.com" target="_new">
-                Smartrac</a>, I got to create a server extension for their{' '}
-                <a href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</a> IoT System using Java,
+                In a summer internship at <Link extern href="https://www.smartrac-group.com">
+                Smartrac</Link>, I got to create a server extension for their{' '}
+                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT system using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
-        <a href="https://www.twilio.com" target="_new">Twilio</a>.
+                <Link extern href="https://www.twilio.com">Twilio</Link>.
                                                  </p>
       }]
   }, {

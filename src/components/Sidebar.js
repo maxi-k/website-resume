@@ -4,6 +4,7 @@ import React from 'react';
 import { Card } from 'semantic-ui-react';
 import SocialLinks from 'components/SocialLinks';
 
+
 const InfoCard = () => {
     const social = <SocialLinks />
     return (

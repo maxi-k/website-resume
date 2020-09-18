@@ -14,4 +14,5 @@ const content = {
           icon: "linkedin" }
     ]
 }
+
 export default content

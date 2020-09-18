@@ -1,7 +1,7 @@
 import 'css/App.css';
 import React from 'react';
 import { T, t } from 'content'
-import MediaQuery from 'react-responsive'
+import { useMediaPredicate } from 'react-media-hook'
 import { Grid, Container } from 'semantic-ui-react'
 import MainContent, { ContentHeader, Sections } from 'components/MainContent'
 import Sidebar from 'components/Sidebar'
@@ -33,17 +33,8 @@ const ScreenApp = ({ mainWidths, sideWidths }) => (
 )
 
 const RawApp = () => {
-    return (
-        <MediaQuery query="only print">
-          {(matches) => {
-              if (matches) {
-                  return <PrintApp />
-              } else {
-                  return <ScreenApp {...widthDefs} />
-              }}
-          }
-        </MediaQuery>
-    );
+    const isPrint = useMediaPredicate("(only print)");
+    return isPrint ? <PrintApp /> : <ScreenApp {...widthDefs} />
 }
 
 const App = () => <T as={RawApp} />
