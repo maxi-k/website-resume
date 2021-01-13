@@ -7,7 +7,7 @@ const content = (
     { lang: "en",
       title : "Resume",
       person: {
-          occupation: "Student, Developer"
+          occupation: "PhD Student, Developer"
       },
       github: {
           languages: 'Languages (Github)'
@@ -55,13 +55,13 @@ const content = (
           id: "Education",
           name: "Education",
           items: [
-              { name: "10/2018 - 2020",
-                meta: "Master of Science, Multiple Universities" ,
+              { name: "10/2018 - 12/2020",
+                meta: "Master of Science, Multiple Universities. Final Grade 1.02 (GPA 3.9~4.0)" ,
                 description: <p>
-                I am part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
+                I was part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </Link>, with the goal of getting my masters degree in software engineering in 2020.
-                As part of the program, I am a student at the University of Augsburg,
+                </Link>, and received my masters degree in software engineering in 2020.
+                As part of the program, I was a student at the University of Augsburg,
                 the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
                 </p>
               },
@@ -86,7 +86,7 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
-              { name: "04/2020 - 10/2020",
+              { name: "04/2020 - 12/2020",
                 meta: "University of Jena",
                 id: "cv-job-jena",
                 description: <p>

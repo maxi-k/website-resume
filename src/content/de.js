@@ -7,7 +7,7 @@ const content = (
     { lang: "de",
       title : "Lebenslauf",
       person: {
-          occupation: "Student, Softwareentwickler"
+          occupation: "Doktorand, Softwareentwickler"
       },
       resumeSections: [{
           id: "Languages",
@@ -50,13 +50,13 @@ const content = (
           id: "Education",
           name: "Ausbildung",
           items: [
-              { name: "10/2018 - 2020",
-                meta: "Master of Science, Mehrere Universitäten" ,
+              { name: "10/2018 - 12/2020",
+                meta: "Master of Science, Mehrere Universitäten. Abschlussnote 1,02" ,
                 description: <p>
-                Ich bin Teil des <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
+                Ich war Teil des <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </Link>, mit voraussichtlichem Abschluss im Sommer 2020.
-                Als Teil des Studiengangs bin ich Student an der Universität Augsburg,
+                </Link>, und erhielt meinen Abschluss im Dezember 2020.
+                Als Teil des Studiengangs war ich Student an der Universität Augsburg,
                 der Technischen Universität München,
                 sowie an der Ludiwg-Maximilians Universität München.
                 </p>
@@ -81,7 +81,7 @@ const content = (
           name: "Arbeitserfahrung",
           items: [
 
-              { name: "04/2020 - 10/2020",
+              { name: "04/2020 - 12/2020",
                 meta: "Universität Jena",
                 id: "cv-job-jena",
                 description: <p>
