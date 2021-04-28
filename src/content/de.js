@@ -7,7 +7,7 @@ const content = (
     { lang: "de",
       title : "Lebenslauf",
       person: {
-          occupation: "Doktorand, Softwareentwickler"
+          occupation: "Softwareentwickler, Doktorand"
       },
       resumeSections: [{
           id: "Languages",
@@ -37,6 +37,7 @@ const content = (
               description: <p>
               Im Rahmen von Vorlesungen und Seminaren habe ich verschiedene Teile von Datenbanken in C++ implementiert.
               Auch während meiner Masterarbeit kam die Sprache vielseitig zum Einsatz.
+              Im Moment benutze ich die Sprache um effiziente Datenstrukturen für meine Doktorarbeit zu implementieren.
               </p> },
             { name: "JavaScript",
               meta: "hype.js",
@@ -50,7 +51,14 @@ const content = (
           id: "Education",
           name: "Ausbildung",
           items: [
-              { name: "10/2018 - 12/2020",
+              { name: "01/2021 - jetzt",
+                meta: "Doktorand" ,
+                description: <p>
+                Ich bin Doktorand unter der Leitung von Prof. Viktor Leis an der Friedrich-Alexander Universität Erlangen-Nürnberg.
+                Zur Zeit forsche ich an analytischen Datenbanksystemen und effizienter Anfragebearbeitung.
+                </p>
+              },
+              { name: "10/2018 - 11/2020",
                 meta: "Master of Science, Mehrere Universitäten. Abschlussnote 1,02" ,
                 description: <p>
                 Ich war Teil des <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
@@ -58,7 +66,7 @@ const content = (
                 </Link>, und erhielt meinen Abschluss im Dezember 2020.
                 Als Teil des Studiengangs war ich Student an der Universität Augsburg,
                 der Technischen Universität München,
-                sowie an der Ludiwg-Maximilians Universität München.
+                sowie an der Ludiwg-Maximilian Universität München.
                 </p>
               },
               { name: "09/2015 - 09/2018",
@@ -80,16 +88,23 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
-
-              { name: "04/2020 - 12/2020",
+              { name: "04/2021 - jetzt",
+                meta: "Universität Erlangen",
+                id: "cv-research-erlangen",
+                description: <p>
+                Ich bin am{' '}
+                <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
+                an der Friedrich-Alexander-Universität Erlangen als wissenschaftlicher Mitarbeiter eingestellt,{' '}
+                wo ich Forsche und verschiedene Kurse und studentische Projekte betreue.
+                </p> },
+              { name: "04/2020 - 03/2021",
                 meta: "Universität Jena",
                 id: "cv-job-jena",
                 description: <p>
-                Ich bin am Lehrstuhl{' '}
+                Ich war am Lehrstuhl für{' '}
                 <Link extern href="https://dbis1.github.io/">Datenbanken und Informationssysteme</Link>{' '}
-                an der Universität Jena eingestellt, während ich dort meine Mastarbeit schreibe, welche von{' '}
-                <Link extern href="https://dbis1.github.io/team/leis.html">Prof. Dr. Viktor Leis</Link>{' '}
-                betreut wird.
+                an der Universität Jena als wissenschaftliche Hilfskraft und später als wissenschaftlicher Mitarbeiter eingestellt,{' '}
+                bevor dieser an die Friedrich-Alexander-Universität Erlangen-Nürnberg umzog.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zürich",

@@ -7,7 +7,7 @@ const content = (
     { lang: "en",
       title : "Resume",
       person: {
-          occupation: "PhD Student, Developer"
+          occupation: "Developer, PhD Student"
       },
       github: {
           languages: 'Languages (Github)'
@@ -40,7 +40,7 @@ const content = (
             meta: "Efficiency²",
             description: <p>
             I implemented various parts of databases in C++ for university, and used it extensively during
-            my masters thesis.
+            my masters thesis. I am using it to implement efficient data structures during my PhD.
             </p>
           },
           { name: "JavaScript",
@@ -55,14 +55,21 @@ const content = (
           id: "Education",
           name: "Education",
           items: [
-              { name: "10/2018 - 12/2020",
+              { name: "01/2021 - now",
+                meta: "PhD Student" ,
+                description: <p>
+                I'm doing my PhD with Prof. Viktor Leis at the Friedrich-Alexander University Erlangen-Nürnberg.
+                At the moment I am researching analytical database systems and efficient query processing.
+                </p>
+              },
+              { name: "10/2018 - 11/2020",
                 meta: "Master of Science, Multiple Universities. Final Grade 1.02 (GPA 3.9~4.0)" ,
                 description: <p>
                 I was part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
                 </Link>, and received my masters degree in software engineering in 2020.
                 As part of the program, I was a student at the University of Augsburg,
-                the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
+                the Technical University of Munich, as well as the Ludwig-Maximilian University in Munich.
                 </p>
               },
               { name: "09/2015 - 09/2018",
@@ -86,14 +93,23 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
-              { name: "04/2020 - 12/2020",
+              { name: "04/2021 - now",
+                meta: "University Erlangen",
+                id: "cv-research-erlangen",
+                description: <p>
+                I am employed at the{' '}
+                <Link extern href="https://www.cs6.tf.fau.de/">chair for data management</Link>{' '}
+                at the Friedrich-Alexander University Erlangen-Nürnberg as research advisor,{' '}
+                where I supervise various courses and student projects.
+                </p> },
+              { name: "04/2020 - 03/2021",
                 meta: "University of Jena",
                 id: "cv-job-jena",
                 description: <p>
-                I am employed at the chair for{' '}
+                I was employed at the chair for{' '}
                 <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
-                at the University of Jena while writing my masters thesis there, mentored by{' '}
-                <Link extern href="https://dbis1.github.io/team/leis.html">Prof. Dr. Viktor Leis</Link>.
+                at the Friedrich-Schiller University Jena as a research assistant and later as a research advisor,{' '}
+                before the chair moved to the Friedrich-Alexander University in Erlangen.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",

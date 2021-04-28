@@ -1,16 +1,16 @@
 {
-  "name": "website-2017",
+  "name": "website-resume",
   "homepage": "https://maxi-k.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.20",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-media-hook": "^0.4.9",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^4.0.3",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^2.0.1",
+    "semantic-ui-react": "^2.0.3",
     "url-search-params": "^1.1.0"
   },
   "scripts": {
