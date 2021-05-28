@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 const SKILL_EXCLUDED_REPOS = Object.freeze([
     "dwm",
     "bachelor-code-arduino",
-    "hci-complementing-mirror"
+    "hci-complementing-mirror",
+    "osv"
 ])
 const SKILL_TRIVIAL_LANGUAGES = new Set([
     "HTML",
