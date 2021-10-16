@@ -1,7 +1,9 @@
 import React from 'react';
-import { SocialLinks } from 'components/SocialLinks';
+import { SocialLinks } from 'components/SocialLinks'
 import { Link } from 'components/Link'
 import { SkillLevels } from 'components/SkillLevel'
+import { Publication } from 'components/Publication'
+import common from './common';
 
 const content = (
     { lang: "en",
@@ -12,46 +14,21 @@ const content = (
       github: {
           languages: 'Languages (Github)'
       },
+      publication: {
+        readFull: 'read paper'
+      },
       resumeSections: [{
-        id: "Languages",
-        name: "Languages",
-        header: <SkillLevels />,
-        items: [
-          { name: "Java & Scala",
-            meta: "Sounds professional",
-            description: <p>
-            I used Java and Scala in muliple private and university projects,
-            and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
-            Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
-            implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
-            </p>
-          },
-          { name: "Clojure",
-            meta: "λ x y . x",
-            description: <p>
-            After learning Clojure(Script) when implementing
-            a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
-            I have last used it for implementing
-            the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
-            fullstack Clojure and ClojureScript with websockets.
-            </p>
-          },
-          { name: "C++",
-            meta: "Efficiency²",
-            description: <p>
-            I implemented various parts of databases in C++ for university, and used it extensively during
-            my masters thesis. I am using it to implement efficient data structures during my PhD.
-            </p>
-          },
-          { name: "JavaScript",
-            meta: "hype.js",
-            description: <p>
-            I've implemented more frontends and backends using more frameworks and libraries than I can count,
-                  from Node plus Angular to React-Native with TypeScript.
-                </p>
-              }
-          ]
-  }, {
+          id: "Languages",
+          content: <SkillLevels />
+      }, {
+          id: "Publications",
+          name: "Publications",
+          items: common.publications.map((pub) => ({
+            name: pub.conference + " " + pub.year,
+            meta: pub.type,
+            description: <Publication {...pub} />
+          }))
+      }, {
           id: "Education",
           name: "Education",
           items: [
@@ -79,14 +56,6 @@ const content = (
                 <Link extern href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
                >Computer Science and Engineering</Link>.
                 </p>
-              },
-              { name: "09/2007 - 6/2015",
-                meta: "Abitur, Grade 1.2 (A)",
-                description: <p>
-                I went to the <Link extern href="https://www.jakob-brucker-gymnasium.de">
-                Jakob-Brucker-Gymnasium</Link> in Kaufbeuren (Bavaria),
-                with an emphasis on humanistic studies (Latin and Ancient Greek).
-                </p>
               }
           ]
       }, {
@@ -98,9 +67,9 @@ const content = (
                 id: "cv-research-erlangen",
                 description: <p>
                 I am employed at the{' '}
-                <Link extern href="https://www.cs6.tf.fau.de/">chair for data management</Link>{' '}
+                <Link extern href="https://www.cs6.tf.fau.eu/">chair for data management</Link>{' '}
                 at the Friedrich-Alexander University Erlangen-Nürnberg as research advisor,{' '}
-                where I supervise various courses and student projects.
+                where I supervise various courses, student projects and theses.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "University of Jena",
@@ -145,22 +114,10 @@ const content = (
                 description: <p>
                 In a summer internship at <Link extern href="https://www.smartrac-group.com">
                 Smartrac</Link>, I got to create a server extension for their{' '}
-                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT system using Java,
+                <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link> IoT system using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link>.
                 </p>
-      }]
-  }, {
-    id: "Certificates",
-    name: "Certificates",
-    items: [
-      { name: "Advanced English",
-        meta: "Language Level C2",
-        description: <p>
-        In 2015 I acquired the Cambridge Advanced English Certificate
-        in ESOL International, reaching Grade A, which corresponds to the
-        Council of Europe Level C2.
-        </p>
       }]
   }, {
     id: "Contact",

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'components/Link'
 import { SkillLevels } from 'components/SkillLevel'
-import { SocialLinks } from 'components/SocialLinks';
+import { SocialLinks } from 'components/SocialLinks'
+import { Publication } from 'components/Publication'
+import common from './common';
 
 const content = (
     { lang: "de",
@@ -9,44 +11,20 @@ const content = (
       person: {
           occupation: "Softwareentwickler, Doktorand"
       },
+      publication: {
+        readFull: 'Paper lesen'
+      },
       resumeSections: [{
           id: "Languages",
-          name: "Sprachen",
-          header: <SkillLevels/>,
-          items: [
-            { name: "Java & Scala",
-              meta: "Sounds professional",
-              description: <p>
-              Ich habe Java und Scala sowohl in einigen privaten und universitären Projekten verwendet,
-              also auch während meiner Praktika bei <Link href="cv-oracle">Oracle</Link> und <Link href="#cv-smartrac">Smartrac</Link>.
-              Der Großteil meiner <Link extern href="https://github.com/maxi-k/bachelor-code">Bachelorarbeit</Link> ist in
-              Java und <Link extern href="https://projectreactor.io/">Reactive Streams</Link> implementiert.
-              </p> },
-            { name: "Clojure",
-              meta: "λ x y . x",
-              description: <p>
-              Initial lernte ich Clojure(Script) beim Implementieren
-              einer <Link extern href="https://github.com/maxi-k/drawer">Webseite über 4D-Rotation</Link> für
-              ein Paper in der Schule kennen.
-              Mein jüngstes Lisp-Projekt war
-              das <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> in
-              full-stack Clojure und ClojureScript unter Verwendung von Websockets.
-              </p> },
-            { name: "C++",
-              meta: "Efficiency²",
-              description: <p>
-              Im Rahmen von Vorlesungen und Seminaren habe ich verschiedene Teile von Datenbanken in C++ implementiert.
-              Auch während meiner Masterarbeit kam die Sprache vielseitig zum Einsatz.
-              Im Moment benutze ich die Sprache um effiziente Datenstrukturen für meine Doktorarbeit zu implementieren.
-              </p> },
-            { name: "JavaScript",
-              meta: "hype.js",
-              description: <p>
-              Ich habe mehr Frontends und Backends mit mehr Frameworks und Bibliotheken implementiert als ich mich erinnern kann,
-              reichend von Node und Angular bis hin zu React-Native mit TypeScript.
-              </p>
-            }
-          ]
+          content: <SkillLevels />
+      }, {
+          id: "Publications",
+          name: "Publications",
+          items: common.publications.map((pub) => ({
+            name: pub.conference + " " + pub.year,
+            meta: pub.type,
+            description: <Publication {...pub} />
+          }))
       }, {
           id: "Education",
           name: "Ausbildung",
@@ -74,14 +52,6 @@ const content = (
                 description: <p>
                 Bis 2018 studierte ich an der Universität Augsburg <Link extern href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"> Ingenieurinformatik</Link> im Bachelor.
                 </p>
-              },
-              { name: "09/2007 - 6/2015",
-                meta: "Abitur, Note 1.2 (A)",
-                description: <p>
-                Ich besuchte das <Link extern href="https://www.jakob-brucker-gymnasium.de">
-                Jakob-Brucker-Gymnasium</Link> in Kaufbeuren (Bayern) mit dem
-                humanistischen Vertiefungsbereich (Latein und Altgriechisch).
-                </p>
               }
           ]
       }, {
@@ -95,7 +65,7 @@ const content = (
                 Ich bin am{' '}
                 <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
                 an der Friedrich-Alexander-Universität Erlangen als wissenschaftlicher Mitarbeiter eingestellt,{' '}
-                wo ich Forsche und verschiedene Kurse und studentische Projekte betreue.
+                wo ich Forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "Universität Jena",
@@ -138,21 +108,9 @@ const content = (
                 description: <p>
                 In einem Praktikum über den Sommer bei <Link extern href="https://www.smartrac-group.com">
                 Smartrac</Link> konnte ich eine Server-Erweiterung für deren{' '}
-                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link>{' '}
+                <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link>{' '}
                 IoT-System mit Java entwickeln, welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link> zu verschicken.
-                </p>
-              }]
-      }, {
-          id: "Certificates",
-          name: "Zertifikate",
-          items: [
-              { name: "Fortgeschrittenes Englisch",
-                meta: "Sprachlevel C2",
-                description: <p>
-                Ich erwarb das Cambridge Advanced English Certificate (CEA) 2015,{' '}
-                und erreichte die Note A, was dem vom Europäischen Rat
-                festgelegten Sprachlevel C2 entspricht.
                 </p>
               }]
       }, {
