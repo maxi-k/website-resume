@@ -13,7 +13,7 @@ const rawLinks = getContent('social'),
 
 export const SocialLinks = () => {
     return (
-        <div className="SocialLinks">
+        <div className="PersonalLinks">
           {linkList}
         </div>
     );
