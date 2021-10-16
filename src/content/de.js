@@ -11,9 +11,6 @@ const content = (
       person: {
           occupation: "Softwareentwickler, Doktorand"
       },
-      publication: {
-        readFull: 'Paper lesen'
-      },
       resumeSections: [{
           id: "Languages",
           content: <SkillLevels />

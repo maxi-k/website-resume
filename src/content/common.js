@@ -13,6 +13,10 @@ const content = {
           path: "https://www.linkedin.com/in/maxi-k",
           icon: "linkedin" }
     ],
+    publication: {
+        readFull: 'PDF',
+        readCode: 'Code'
+    },
     publications: [
         { title: "Towards Cost-Optimal Query Processing in the Cloud",
           authors: ["Viktor Leis", "Maximilian Kuschewski"],
@@ -20,6 +24,7 @@ const content = {
           year: 2021,
           type: "Vision Paper",
           link: "http://www.vldb.org/pvldb/vol14/p1606-leis.pdf",
+          codeLink: "https://github.com/maxi-k/costoptimal-model",
           abstract:
           "Public cloud providers offer hundreds of heterogeneous hardware instances. " +
           "For analytical query processing systems, this presents a major challenge: " +

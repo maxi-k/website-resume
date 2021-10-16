@@ -14,9 +14,6 @@ const content = (
       github: {
           languages: 'Languages (Github)'
       },
-      publication: {
-        readFull: 'read paper'
-      },
       resumeSections: [{
           id: "Languages",
           content: <SkillLevels />
