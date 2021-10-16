@@ -3,7 +3,7 @@ import { Button } from 'semantic-ui-react';
 import { AVAILABLE_LANGUAGES, language, setLanguage }  from 'content'
 import { usePrimaryColor } from 'style'
 
-const LanguageButtons = () => {
+export const LanguageButtons = () => {
     const highlight = usePrimaryColor()
     const buttons = AVAILABLE_LANGUAGES.map((name) => {
         let active = name === language.current
@@ -13,10 +13,8 @@ const LanguageButtons = () => {
         onClick={() => setLanguage(name)}
         content={name} />})
     return (
-        <Button.Group>
+        <Button.Group className="LanguageButtons">
           {buttons}
         </Button.Group>
     );
 };
-
-export default LanguageButtons

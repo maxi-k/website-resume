@@ -1,50 +1,25 @@
-:root {
-    --dark-theme-highlight:  rgb(121, 29, 152);
-    --light-theme-highlight: #1279c6;
-}
-
 .App {
     padding-top: 2.5em;
     padding-bottom: 5em;
 }
 
+@media only screen and (min-width: 1200px) {
+    .ResumeHeader h1 { font-size: 2.0em; }
+    .ResumeSubheader p { font-size: 1.5em; }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .ResumeHeader h1 { font-size: 1.55em; }
+    .ResumeSubheader p { font-size: 1.0em; }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .ResumeHeader h1 { font-size: 2.0em; }
+    .ResumeSubheader p { font-size: 1.5em; }
+}
+
 .ResumeSection {
     padding-top: 2em;
-}
-
-.SkillLevels {
-    padding-top: 2em;
-    animation: fadein 500ms;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -10%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-.SkillLevels-Loading {
-    height: 132px;
-}
-
-.SkillLevels-Error {
-    height: 0;
-    animation: error-height 500ms;
-}
-
-@keyframes error-height {
-    from {
-        height: 132px;
-    }
-    to {
-        height: 0;
-    }
 }
 
 .Percentile-Bar {
@@ -66,6 +41,28 @@
     border-radius: 6px;
 }
 
+.SkillLevels {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.SkillLevels-Loading {
+    height: 160px;
+}
+
+.SkillLevels-Error {
+    height: 0;
+    animation: error-height 500ms;
+}
+
+@keyframes error-height {
+    from {
+        height: 160px;
+    }
+    to {
+        height: 0;
+    }
+}
 
 .SkillLevels-Descriptions {
     display: flex;
@@ -89,14 +86,32 @@
     display: inline-block;
 }
 
-.Skill-NameTag {
-
-}
+.Skill-NameTag {}
 
 .Skill-PercentageTag {
     color: rgba(0, 0, 0, 0.4);
     margin-left: 0.3em;
 }
+
+.Biography {
+    font-size: 1.375rem;
+    text-align: justify;
+    line-height: 1.875rem;
+}
+
+.Publication-Title {
+    display: block;
+}
+
+.Publication-Authors {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.Publication-Links {
+    display: block;
+}
+
+.Publication-Abstract {}
 
 .SocialLinks {
     text-align: center;
@@ -107,31 +122,14 @@ a.nohighlight:not(:hover) {
 }
 
 a:not(:hover) {
-    color: var(--light-theme-highlight);
+    color: #1279c6;
 }
 
 a.icon-link:not(:hover) {
     color: rgba(0,0,0,.4);
 }
 
-.Portrait {
-    width: 4rem;
-    height: 4rem;
-}
-
-@media only screen and (min-width: 768px) {
-    .InfoCard-Wrapper {
-        top: 2.5em;
-        position: sticky;
-    }
-}
-
 @media only screen and (max-width: 767px) {
-    .InfoCard-Wrapper {
-        position: relative;
-        margin-bottom: 2em;
-    }
-
     .ResumeSectionItem {
         margin-bottom: 3.2rem !important;
     }
@@ -147,11 +145,9 @@ a.icon-link:not(:hover) {
     .App {
         display: grid !important;
         grid-template-areas:
-            "header card"
-            "subheader card"
-            "skills card"
-            "skills education"
-            "skills education"
+            "header avatar"
+            "languages education"
+            "languages education"
             "working-experience certificates"
             "working-experience contact";
         grid-template-columns: 2fr 1fr;
@@ -159,12 +155,18 @@ a.icon-link:not(:hover) {
         padding: 2.0rem;
     }
 
+    .LanguageButtons, .SkillLevels {
+        display: none !important;
+    }
 
-    .InfoCard-Wrapper {grid-area: card;}
-    .InfoCard-Wrapper .extra.content { display: none }
+    .Avatar {
+        grid-area: avatar;
+        width: 10em !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ResumeHeader { grid-area: header; }
-    .ResumeSubheader { grid-area: subheader; }
-    .ResumeSection-Skills { grid-area: skills; }
+    .ResumeSection-Languages { grid-area: languages; }
     .ResumeSection-Education { grid-area: education; }
     .ResumeSection-Working-Experience { grid-area: working-experience; }
     .ResumeSection-Certificates { grid-area: certificates; }

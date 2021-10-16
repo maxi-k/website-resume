@@ -1,66 +1,57 @@
 import React from 'react';
-import SocialLinks from 'components/SocialLinks';
-import Link from 'components/Link'
+import { SocialLinks } from 'components/SocialLinks'
+import { Link } from 'components/Link'
+import { SkillLevels } from 'components/SkillLevel'
+import { Publication } from 'components/Publication'
+import common from './common';
 
 const content = (
     { lang: "en",
       title : "Resume",
       person: {
-          occupation: "Student, Developer"
+          occupation: "Developer, PhD Student"
       },
       github: {
           languages: 'Languages (Github)'
       },
       resumeSections: [{
-        id: "Languages",
-        name: "Languages",
-        items: [
-          { name: "Java & Scala",
-            meta: "Sounds professional",
-            description: <p>
-            I used Java and Scala in muliple private and university projects,
-            and at my internships at <Link href="cv-oracle">Oracle</Link> and <Link href="#cv-smartrac">Smartrac</Link>.
-            Most of my <Link extern href="https://github.com/maxi-k/bachelor-code">bachelor thesis</Link> is
-            implemented with Java and <Link extern href="https://projectreactor.io/">Reactive Streams</Link>.
-            </p>
-          },
-          { name: "Clojure",
-            meta: "λ x y . x",
-            description: <p>
-            After learning Clojure(Script) when implementing
-            a <Link extern href="https://github.com/maxi-k/drawer">website for 4d rotation</Link> for a paper in school,
-            I have last used it for implementing
-            the <Link extern href="https://en.wikipedia.org/wiki/Beer_distribution_game">Beer Distribution Game</Link> using
-            fullstack Clojure and ClojureScript with websockets.
-            </p>
-          },
-          { name: "C++",
-            meta: "Efficiency²",
-            description: <p>
-            I implemented various parts of databases in C++ for university, and used it extensively during
-            my masters thesis.
-            </p>
-          },
-          { name: "JavaScript",
-            meta: "hype.js",
-            description: <p>
-            I've implemented more frontends and backends using more frameworks and libraries than I can count,
-                  from Node plus Angular to React-Native with TypeScript.
-                </p>
-              }
-          ]
-  }, {
+        id: "Introduction",
+        header: <SkillLevels />,
+        content: <p className="Biography">
+                   I am a PhD student at the Friedrich–Alexander University Erlangen–Nürnberg,{' '}
+                   researching databases at the chair for data management under Viktor Leis.{' '}
+                   Before that, I was student at TU Munich, LMU Munich, and the University of Augsburg,{' '}
+                   completing my bachelors degree in computer science and engineering, and my masters degree in software engineering.{' '}
+                   I'm interested in high-performance software, distributed systems, and programming languages.
+                 </p>
+      }, {
+          id: "Publications",
+          name: "Publications",
+          items: common.publications.map((pub) => ({
+            name: pub.conference + " " + pub.year,
+            meta: pub.type,
+            description: <Publication {...pub} />
+          }))
+      }, {
           id: "Education",
           name: "Education",
           items: [
-              { name: "10/2018 - 2020",
-                meta: "Master of Science, Multiple Universities" ,
+              { name: "01/2021 - now",
+                meta: "PhD Student" ,
                 description: <p>
-                I am part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
+                I'm doing my PhD with Prof. <Link extern href={common.publication.phdAdvisor}>Viktor Leis</Link> at
+                the Friedrich-Alexander University Erlangen-Nürnberg.
+                At the moment I am researching analytical database systems and efficient query processing.
+                </p>
+              },
+              { name: "10/2018 - 11/2020",
+                meta: "Master of Science, Multiple Universities. Final Grade 1.02 (GPA 3.9~4.0)" ,
+                description: <p>
+                I was part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </Link>, with the goal of getting my masters degree in software engineering in 2020.
-                As part of the program, I am a student at the University of Augsburg,
-                the Technical University of Munich, as well as the Ludwig-Maximilians University in Munich.
+                </Link>, and received my masters degree in software engineering in 2020.
+                As part of the program, I was a student at the University of Augsburg,
+                the Technical University of Munich, as well as the Ludwig-Maximilian University in Munich.
                 </p>
               },
               { name: "09/2015 - 09/2018",
@@ -70,28 +61,29 @@ const content = (
                 <Link extern href="https://www.informatik.uni-augsburg.de/studium/studiengaenge/bachelor_inginf.html"
                >Computer Science and Engineering</Link>.
                 </p>
-              },
-              { name: "09/2007 - 6/2015",
-                meta: "Abitur, Grade 1.2 (A)",
-                description: <p>
-                I went to the <Link extern href="https://www.jakob-brucker-gymnasium.de">
-                Jakob-Brucker-Gymnasium</Link> in Kaufbeuren (Bavaria),
-                with an emphasis on humanistic studies (Latin and Ancient Greek).
-                </p>
               }
           ]
       }, {
           id: "Working-Experience",
           name: "Working Experience",
           items: [
-              { name: "04/2020 - 10/2020",
+              { name: "04/2021 - now",
+                meta: "University Erlangen",
+                id: "cv-research-erlangen",
+                description: <p>
+                I am employed at the{' '}
+                <Link extern href="https://www.cs6.tf.fau.eu/">chair for data management</Link>{' '}
+                at the Friedrich-Alexander University Erlangen-Nürnberg as research advisor,{' '}
+                where I supervise various courses, student projects and theses.
+                </p> },
+              { name: "04/2020 - 03/2021",
                 meta: "University of Jena",
                 id: "cv-job-jena",
                 description: <p>
-                I am employed at the chair for{' '}
+                I was employed at the chair for{' '}
                 <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
-                at the University of Jena while writing my masters thesis there, mentored by{' '}
-                <Link extern href="https://dbis1.github.io/team/leis.html">Prof. Dr. Viktor Leis</Link>.
+                at the Friedrich-Schiller University Jena as a research assistant and later as a research advisor,{' '}
+                before the chair moved to the Friedrich-Alexander University in Erlangen.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",
@@ -115,7 +107,7 @@ const content = (
                 meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Working at the <Link extern href="http://www.wiwi.uni-augsburg.de/it/">IT-Department</Link> of
+                Working at the <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Department</Link> of
                 the biggest faculty on campus, my tasks included administering
                 multiple Linux systems in a virtual environment,
                 developing and maintaining a Ruby on Rails App, as well as maintaining
@@ -127,22 +119,10 @@ const content = (
                 description: <p>
                 In a summer internship at <Link extern href="https://www.smartrac-group.com">
                 Smartrac</Link>, I got to create a server extension for their{' '}
-                <Link extern href="https://www.smartrac-group.com/IoT-solutions.html">Smart Cosmos</Link> IoT system using Java,
+                <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link> IoT system using Java,
                 which enabled it to send SMS in connection with IoT events using{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link>.
                 </p>
-      }]
-  }, {
-    id: "Certificates",
-    name: "Certificates",
-    items: [
-      { name: "Advanced English",
-        meta: "Language Level C2",
-        description: <p>
-        In 2015 I acquired the Cambridge Advanced English Certificate
-        in ESOL International, reaching Grade A, which corresponds to the
-        Council of Europe Level C2.
-        </p>
       }]
   }, {
     id: "Contact",

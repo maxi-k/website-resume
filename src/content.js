@@ -61,7 +61,7 @@ class T extends React.Component {
     }
 
     componentWillUnmount() {
-        components.remove(this);
+        components.delete(this);
     }
 
     render() {
