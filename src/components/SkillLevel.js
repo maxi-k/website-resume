@@ -1,4 +1,5 @@
 import React from 'react'
+import { t } from 'content';
 import { Link } from 'components/Link'
 import { useSkills } from 'api'
 
@@ -45,7 +46,7 @@ export const SkillLevels = (props) => {
   const perc = skills.map(skill => ({...skill, percentage: skill.codeSize / sum }))
   const top = perc.filter(skill => skill.percentage >= 0.03);
   const restPerc = 1 - top.reduce((sum, skill) => sum + skill.percentage, 0);
-  top.push({ name: "Others", color: "#e8e8e8", percentage: restPerc, uriKey: " " })
+  top.push({ name: t('skills.others'), color: "#e8e8e8", percentage: restPerc, uriKey: " " })
   return (
     <div className="SkillLevels">
       <MultiColorBar items={top}/>
@@ -62,15 +63,14 @@ const Loader = () => {
   const circleRadius = 4;
   const circleData = (count, sizeCount = undefined) => [...Array(count).keys()].map((n) => {
     const sizeCnt = sizeCount || count;
-    console.log(sizeCount, sizeCnt)
     const size = 2 * circleRadius + width / (sizeCnt + 1) / 2
     return {size: size, offset: (width * (n + 1) / (count + 1)) - size/2}
   });
   const circleElements = (y) => ({size, offset}) =>
-          <>
-            <circle cx={"" + offset}  cy={"" + y} r={circleRadius} />
-            <rect x={"" + (offset + 2 * circleRadius)} y={y - 3} rx="1" ry="1" width={"" + (size - 2 * circleRadius)} height="6" />
-          </>;
+        <React.Fragment key={offset}>
+          <circle cx={"" + offset}  cy={"" + y} r={circleRadius} />
+          <rect x={"" + (offset + 2 * circleRadius)} y={y - 3} rx="1" ry="1" width={"" + (size - 2 * circleRadius)} height="6" />
+        </React.Fragment>;
   const colors = Object.freeze(["#f3f3f3", "#e8e8e8"]);
   return (
     <svg role="img" aria-labelledby="loading-aria" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none">
@@ -80,7 +80,7 @@ const Loader = () => {
     y="0"
     width="100%"
     height="100%"
-    clip-path="url(#clip-path)"
+    clipPath="url(#clip-path)"
     style={{fill: 'url("#fill")' }}
   ></rect>
   <defs>
@@ -92,8 +92,8 @@ const Loader = () => {
     <linearGradient id="fill">
       <stop
         offset="0.599964"
-        stop-color={colors[0]}
-        stop-opacity="1">
+        stopColor={colors[0]}
+        stopOpacity="1">
         <animate
           attributeName="offset"
           values="-2; -2; 1"
@@ -103,8 +103,8 @@ const Loader = () => {
       </stop>
       <stop
         offset="1.59996"
-        stop-color={colors[1]}
-        stop-opacity="1">
+        stopColor={colors[1]}
+        stopOpacity="1">
         <animate
           attributeName="offset"
           values="-1; -1; 2"
@@ -114,8 +114,8 @@ const Loader = () => {
       </stop>
       <stop
         offset="2.59996"
-        stop-color={colors[0]}
-        stop-opacity="1">
+        stopColor={colors[0]}
+        stopOpacity="1">
         <animate
           attributeName="offset"
           values="0; 0; 3"

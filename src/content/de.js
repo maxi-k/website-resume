@@ -11,6 +11,9 @@ const content = (
       person: {
           occupation: "Softwareentwickler, Doktorand"
       },
+      skills: {
+        others: 'Andere'
+      },
       resumeSections: [{
           id: "Introduction",
           header: <SkillLevels />,

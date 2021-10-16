@@ -17,7 +17,6 @@ const cache = {}
 export const useSkills = () => {
     const [skills, setSkills] = useState(cache.current);
     useEffect(() => {
-        console.log(cache)
         if (!!cache.current) {
             return setSkills(cache.current)
         }
@@ -27,7 +26,6 @@ export const useSkills = () => {
         })
             .then(res => res.json())
             .then(body => {
-                console.log(body);
                 const sorted = body.skills.sort((s1, s2) => (
                     s1.codeSize === s2.codeSize ? 0 :
                         s1.codeSize < s2.codeSize ? 1 : -1
@@ -36,7 +34,7 @@ export const useSkills = () => {
                 return setSkills({ cached: false, skills: sorted })
             })
             .catch(error => {
-                console.log(error);
+                // console.log(error);
                 return setSkills({ error })
             })
     }, [/* run only once */])

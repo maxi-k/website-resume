@@ -14,6 +14,9 @@ const content = (
       github: {
           languages: 'Languages (Github)'
       },
+      skills: {
+        others: 'Others'
+      },
       resumeSections: [{
         id: "Introduction",
         header: <SkillLevels />,
