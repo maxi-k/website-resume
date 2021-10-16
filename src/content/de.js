@@ -12,11 +12,18 @@ const content = (
           occupation: "Softwareentwickler, Doktorand"
       },
       resumeSections: [{
-          id: "Languages",
-          content: <SkillLevels />
+          id: "Introduction",
+          header: <SkillLevels />,
+          content: <p className="Biography">
+                     Ich bin Doktorand an der Friedrich–Alexander Universität Erlangen–Nürnberg,{' '}
+                     und forsche am Lehrstuhl für Datenmanagement unter Viktor Leis an Datenbanken.{' '}
+                     Davor war ich Student an der TU München, der LMU München und der Universität Augsburg,{' '}
+                     wo ich meinen Bachelor in Ingenieurinformatik und meinen Master in Software Engineering absolvierte.{' '}
+                     Ich bin interessiert an high-performance Software, verteilten Systemen und Programmiersprachen.
+                   </p>
       }, {
           id: "Publications",
-          name: "Publications",
+          name: "Publikationen",
           items: common.publications.map((pub) => ({
             name: pub.conference + " " + pub.year,
             meta: pub.type,

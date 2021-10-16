@@ -15,8 +15,15 @@ const content = (
           languages: 'Languages (Github)'
       },
       resumeSections: [{
-          id: "Languages",
-          content: <SkillLevels />
+        id: "Introduction",
+        header: <SkillLevels />,
+        content: <p className="Biography">
+                   I am a PhD student at the Friedrich–Alexander University Erlangen–Nürnberg,{' '}
+                   researching databases at the chair for data management under Viktor Leis.{' '}
+                   Before that, I was student at TU Munich, LMU Munich, and the University of Augsburg,{' '}
+                   completing my bachelors degree in computer science and engineering, and my masters degree in software engineering.{' '}
+                   I'm interested in high-performance software, distributed systems, and programming languages.
+                 </p>
       }, {
           id: "Publications",
           name: "Publications",
@@ -32,7 +39,8 @@ const content = (
               { name: "01/2021 - now",
                 meta: "PhD Student" ,
                 description: <p>
-                I'm doing my PhD with Prof. Viktor Leis at the Friedrich-Alexander University Erlangen-Nürnberg.
+                I'm doing my PhD with Prof. <Link extern href={common.publication.phdAdvisor}>Viktor Leis</Link> at
+                the Friedrich-Alexander University Erlangen-Nürnberg.
                 At the moment I am researching analytical database systems and efficient query processing.
                 </p>
               },

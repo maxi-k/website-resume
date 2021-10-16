@@ -7,7 +7,7 @@ const content = {
           path: "https://github.com/maxi-k",
           icon: "github" },
         { name: "Google Scholar",
-          path: "https://scholar.google.com/citations?user=PC1VMZAAAAAJ&hl=de",
+          path: "https://scholar.google.com/citations?user=PC1VMZAAAAAJ",
           icon: "graduation cap" },
         { name: "LinkedIn",
           path: "https://www.linkedin.com/in/maxi-k",
@@ -15,7 +15,8 @@ const content = {
     ],
     publication: {
         readFull: 'PDF',
-        readCode: 'Code'
+        readCode: 'Code',
+        phdAdvisor: 'https://scholar.google.com/citations?user=qFOwPNQAAAAJ'
     },
     publications: [
         { title: "Towards Cost-Optimal Query Processing in the Cloud",
