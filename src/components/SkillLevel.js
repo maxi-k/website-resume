@@ -43,7 +43,7 @@ export const SkillLevels = (props) => {
   }
   const sum = skills.reduce((sum, skill) => sum + skill.codeSize, 0)
   const perc = skills.map(skill => ({...skill, percentage: skill.codeSize / sum }))
-  const top = perc.filter(skill => skill.percentage >= 0.05);
+  const top = perc.filter(skill => skill.percentage >= 0.03);
   const restPerc = 1 - top.reduce((sum, skill) => sum + skill.percentage, 0);
   top.push({ name: "Others", color: "#eeeeee", percentage: restPerc, uriKey: " " })
   return (
