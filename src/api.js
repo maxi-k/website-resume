@@ -11,7 +11,6 @@ const SKILL_TRIVIAL_LANGUAGES = new Set([
     "HTML",
     "CSS",
     "TeX",
-    "R",
 ])
 const SKILL_API_URL = "https://okhkp2o8fd.execute-api.eu-central-1.amazonaws.com/default/"
 const cache = {}
