@@ -31,27 +31,100 @@ export const SkillDescription = ({ name, color, percentage, uriKey = null }) => 
 )
 
 export const SkillLevels = (props) => {
-  const data = useSkills()
+  const data = useSkills();
   if (!data) {
-    return <div className="SkillLevels-Loading"/>
+    return <div className="SkillLevels-Loading"><Loader/></div>
   }
   const { cached, skills } = data;
   if (!!skills && !!skills.error) {
     return <div className="SkillLevels-Error"/>
   } else if (!skills || skills.length === 0) {
-    return <div className="SkillLevels-Loading"/>
+    return <div className="SkillLevels-Loading"><Loader/></div>
   }
   const sum = skills.reduce((sum, skill) => sum + skill.codeSize, 0)
   const perc = skills.map(skill => ({...skill, percentage: skill.codeSize / sum }))
   const top = perc.filter(skill => skill.percentage >= 0.03);
   const restPerc = 1 - top.reduce((sum, skill) => sum + skill.percentage, 0);
-  top.push({ name: "Others", color: "#eeeeee", percentage: restPerc, uriKey: " " })
+  top.push({ name: "Others", color: "#e8e8e8", percentage: restPerc, uriKey: " " })
   return (
-    <div className={`SkillLevels ${ cached || 'network' }`}>
+    <div className="SkillLevels">
       <MultiColorBar items={top}/>
       <div className="SkillLevels-Descriptions">
         { top.map(skill => <SkillDescription key={skill.name} {...skill} />) }
       </div>
     </div>
   )
+}
+
+const Loader = () => {
+  const width = 400;
+  const height = 150;
+  const circleRadius = 4;
+  const circleData = (count, sizeCount = undefined) => [...Array(count).keys()].map((n) => {
+    const sizeCnt = sizeCount || count;
+    console.log(sizeCount, sizeCnt)
+    const size = 2 * circleRadius + width / (sizeCnt + 1) / 2
+    return {size: size, offset: (width * (n + 1) / (count + 1)) - size/2}
+  });
+  const circleElements = (y) => ({size, offset}) =>
+          <>
+            <circle cx={"" + offset}  cy={"" + y} r={circleRadius} />
+            <rect x={"" + (offset + 2 * circleRadius)} y={y - 3} rx="1" ry="1" width={"" + (size - 2 * circleRadius)} height="6" />
+          </>;
+  const colors = Object.freeze(["#f3f3f3", "#e8e8e8"]);
+  return (
+    <svg role="img" aria-labelledby="loading-aria" viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none">
+  <title id="loading-aria">Loading...</title>
+  <rect
+    x="0"
+    y="0"
+    width="100%"
+    height="100%"
+    clip-path="url(#clip-path)"
+    style={{fill: 'url("#fill")' }}
+  ></rect>
+  <defs>
+    <clipPath id="clip-path">
+        <rect x="4" y="25" rx="5" ry="5" width="394" height="8" />
+      { circleData(5).map(circleElements(48)) }
+      { circleData(4, 5).map(circleElements(64)) }
+    </clipPath>
+    <linearGradient id="fill">
+      <stop
+        offset="0.599964"
+        stop-color={colors[0]}
+        stop-opacity="1">
+        <animate
+          attributeName="offset"
+          values="-2; -2; 1"
+          keyTimes="0; 0.25; 1"
+          dur="2s"
+          repeatCount="indefinite"></animate>
+      </stop>
+      <stop
+        offset="1.59996"
+        stop-color={colors[1]}
+        stop-opacity="1">
+        <animate
+          attributeName="offset"
+          values="-1; -1; 2"
+          keyTimes="0; 0.25; 1"
+          dur="2s"
+          repeatCount="indefinite"></animate>
+      </stop>
+      <stop
+        offset="2.59996"
+        stop-color={colors[0]}
+        stop-opacity="1">
+        <animate
+          attributeName="offset"
+          values="0; 0; 3"
+          keyTimes="0; 0.25; 1"
+          dur="2s"
+          repeatCount="indefinite"></animate>
+      </stop>
+    </linearGradient>
+  </defs>
+</svg>
+  );
 }

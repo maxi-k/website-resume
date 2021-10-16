@@ -22,22 +22,6 @@
     padding-top: 2em;
 }
 
-.network {
-    animation: fadein 500ms;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translate3d(0, -10%, 0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
 .Percentile-Bar {
     display: flex;
     height: 8px;
@@ -63,7 +47,7 @@
 }
 
 .SkillLevels-Loading {
-    height: 132px;
+    height: 160px;
 }
 
 .SkillLevels-Error {
@@ -73,7 +57,7 @@
 
 @keyframes error-height {
     from {
-        height: 132px;
+        height: 160px;
     }
     to {
         height: 0;
@@ -108,6 +92,20 @@
     color: rgba(0, 0, 0, 0.4);
     margin-left: 0.3em;
 }
+
+.Publication-Title {
+    display: block;
+}
+
+.Publication-Authors {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.Publication-Link {
+    display: block;
+}
+
+.Publication-Abstract {}
 
 .SocialLinks {
     text-align: center;
