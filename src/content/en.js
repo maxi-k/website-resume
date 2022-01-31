@@ -52,8 +52,8 @@ const content = (
                 description: <p>
                 I was part of the <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </Link>, and received my masters degree in software engineering in 2020.
-                As part of the program, I was a student at the University of Augsburg,
+                </Link> and received my masters degree in software engineering in 2020.
+                During this time, I was a student at the University of Augsburg,
                 the Technical University of Munich, as well as the Ludwig-Maximilian University in Munich.
                 </p>
               },
@@ -76,8 +76,8 @@ const content = (
                 description: <p>
                 I am employed at the{' '}
                 <Link extern href="https://www.cs6.tf.fau.eu/">chair for data management</Link>{' '}
-                at the Friedrich-Alexander University Erlangen-Nürnberg as research advisor,{' '}
-                where I supervise various courses, student projects and theses.
+                Friedrich-Alexander University Erlangen-Nürnberg as a research assistant,{' '}
+                where I research databases and supervise various courses, student projects, and theses.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "University of Jena",
@@ -85,15 +85,15 @@ const content = (
                 description: <p>
                 I was employed at the chair for{' '}
                 <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
-                at the Friedrich-Schiller University Jena as a research assistant and later as a research advisor,{' '}
-                before the chair moved to the Friedrich-Alexander University in Erlangen.
+                at the Friedrich-Schiller University Jena as a research assistant.
+                I then moved to Erlangen together with the chair.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zurich",
                 id: "cv-oracle",
                 description: <p>
-                As a research assistant at Oracle Labs Zurich, I was able to contribute to a large
-                oracle-internal software project. I designed the architecture for a completely new part
+                As a research assistant at Oracle Labs Zurich I contributed to a large
+                oracle-internal software project. I designed the architecture for a new part
                 of the system together with my mentor and implemented and integrated it afterwards
                 with great success.
                 </p> },
@@ -101,29 +101,26 @@ const content = (
                 meta: "Integer IT",
                 id: "cv-integer",
                 description: <p>
-                I worked at the IT Firm <Link extern href="https://integer.de/">Integer</Link>,
-                where I was responsible for developing and maintaining internal software projects.
-                Furthermore, I was the go-to guy when it came to software projects for customers,
-                many of which I designed and developed from start to finish.
+                At the IT Firm <Link extern href="https://integer.de/">Integer</Link> I was responsible
+                for developing and maintaining internal software projects. I designed and developed
+                several customer projects from start to finish.
                 </p> },
               { name: "01/2016 - 10/2017",
-                meta: "IT-Department, Faculty of Business and Economics, University of Augsburg",
+                meta: "IT-Department, University of Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
                 Working at the <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Department</Link> of
-                the biggest faculty on campus, my tasks included administering
-                multiple Linux systems in a virtual environment,
-                developing and maintaining a Ruby on Rails App, as well as maintaining
-                our monitoring system for the 900+ devices in the building.
+                the biggest faculty on campus, I administered multiple Linux VMs and developed and maintained a Ruby on Rails App{' '}
+                used for organizing most internal data.
                 </p> },
               { name: "08/2015 - 09/2015",
                 meta: "Smartrac Technology GmbH",
                 id: "cv-smartrac",
                 description: <p>
                 In a summer internship at <Link extern href="https://www.smartrac-group.com">
-                Smartrac</Link>, I got to create a server extension for their{' '}
-                <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link> IoT system using Java,
-                which enabled it to send SMS in connection with IoT events using{' '}
+                Smartrac</Link>, I created an extension for their{' '}
+                <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link> IoT system,
+                which enabled sending SMS in connection with IoT events using{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link>.
                 </p>
       }]

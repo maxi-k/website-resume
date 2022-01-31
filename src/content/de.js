@@ -18,7 +18,7 @@ const content = (
           id: "Introduction",
           header: <SkillLevels />,
           content: <p className="Biography">
-                     Ich bin Doktorand an der Friedrich–Alexander Universität Erlangen–Nürnberg,{' '}
+                     Ich bin Doktorand an der Friedrich–Alexander Universität Erlangen–Nürnberg{' '}
                      und forsche am Lehrstuhl für Datenmanagement unter Viktor Leis an Datenbanken.{' '}
                      Davor war ich Student an der TU München, der LMU München und der Universität Augsburg,{' '}
                      wo ich meinen Bachelor in Ingenieurinformatik und meinen Master in Software Engineering absolvierte.{' '}
@@ -39,7 +39,7 @@ const content = (
               { name: "01/2021 - jetzt",
                 meta: "Doktorand" ,
                 description: <p>
-                Ich bin Doktorand unter der Leitung von Prof. Viktor Leis an der Friedrich-Alexander Universität Erlangen-Nürnberg.
+                Ich bin Doktorand an der Friedrich-Alexander-Universität Erlangen-Nürnberg unter der Leitung von Prof. Viktor Leis.
                 Zur Zeit forsche ich an analytischen Datenbanksystemen und effizienter Anfragebearbeitung.
                 </p>
               },
@@ -48,10 +48,9 @@ const content = (
                 description: <p>
                 Ich war Teil des <Link extern href="https://elite-se.informatik.uni-augsburg.de/">
                 Software Engineering Elite Graduate Program
-                </Link>, und erhielt meinen Abschluss im Dezember 2020.
-                Als Teil des Studiengangs war ich Student an der Universität Augsburg,
-                der Technischen Universität München,
-                sowie an der Ludiwg-Maximilian Universität München.
+                </Link> und erhielt meinen Abschluss im Dezember 2020.
+                In dieser Zeit war ich Student an der Universität Augsburg,
+                der Technischen Universität München und an der Ludiwg-Maximilian Universität München.
                 </p>
               },
               { name: "09/2015 - 09/2018",
@@ -69,10 +68,9 @@ const content = (
                 meta: "Universität Erlangen",
                 id: "cv-research-erlangen",
                 description: <p>
-                Ich bin am{' '}
-                <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
-                an der Friedrich-Alexander-Universität Erlangen als wissenschaftlicher Mitarbeiter eingestellt,{' '}
-                wo ich Forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
+                Ich arbeite am <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
+                der Friedrich-Alexander-Universität Erlangen-Nürnberg als wissenschaftlicher Mitarbeiter,{' '}
+                wo ich forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "Universität Jena",
@@ -80,43 +78,40 @@ const content = (
                 description: <p>
                 Ich war am Lehrstuhl für{' '}
                 <Link extern href="https://dbis1.github.io/">Datenbanken und Informationssysteme</Link>{' '}
-                an der Universität Jena als wissenschaftliche Hilfskraft und später als wissenschaftlicher Mitarbeiter eingestellt,{' '}
-                bevor dieser an die Friedrich-Alexander-Universität Erlangen-Nürnberg umzog.
+                an der Universität Jena als wissenschaftliche Hilfskraft und später als wissenschaftlicher Mitarbeiter eingestellt.
+                Später zog ich zusammen mit dem Lehrstuhl nach Erlangen.
                 </p> },
               { name: "08/2019 - 10/2019",
                 meta: "Oracle Labs Zürich",
                 id: "cv-oracle",
                 description: <p>
-                Als Research Assistant bei Oracle Labs in Zürich konnte ich bei einem großen internen
-                Softwareprojekt mitwirken. Ich habe für einen neuen Systemteil zusammen mit meinem Mentor
-                die Architektur erstellt und im Anschluss mit vollem Erfolg implementiert und integriert.
+                Als Research Assistant bei Oracle Labs in Zürich arbeitete ich an einem großen internen
+                Softwareprojekt. Ich erstellte zusammen mit meinem Mentor die Architektur für einen neuen
+                Systemteil und im implementierte ihn im Anschluss mit großem Erfolg.
                 </p> },
               { name: "10/2017 - 01/2020",
                 meta: "Integer GmbH",
                 id: "cv-integer",
                 description: <p>
-                Bei dem IT Dienstleister <Link extern href="https://integer.de/">Integer</Link> nahe Augsburg
-                entwicklte und pflegte ich interne Softwareprojekte. Zudem war ich die erste Anlaufstelle für
-                Softwareprojekte- und Aufträge von Kunden, von denen ich viele von Anfang bis Ende
-                mitdesignte und entwickelte.
+                Bei dem IT Dienstleister <Link extern href="https://integer.de/">Integer</Link> entwicklte
+                und pflegte ich interne Softwareprojekte und entwarf und implementierte einige Softwareprojekte für Kunden.
                 </p> },
               { name: "01/2016 - 10/2017",
-                meta: "IT-Abteilung der Wirtschaftswissenschaftlichen Fakultät, Universität Augsburg",
+                meta: "IT-Abteilung, Universität Augsburg",
                 id: "cv-itwiwi",
                 description: <p>
-                Meine Aufgaben in der <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Abteilung</Link> der
-                größten Fakultät auf dem Campus waren unteranderem die Administration mehrerer
-                Linux-Systeme in einer virtuellen Umgebung, die Entwicklung und Pflege eine Ruby-on-Rails Applikation,
-                so wie die Pflege des Monitoring-Systems für die 900+ Geräte im Gebäude.
+                Bei der <Link extern href="https://www.uni-augsburg.de/de/fakultaet/wiwi/itwiwi/">IT-Abteilung</Link> der
+                größten Fakultät administrierte ich mehrere Linux VMs und entwickelte und pflegte eine Ruby-on-Rails App,
+                die für den Großteil der internen Datenverwaltung verwendet wurde.
                 </p> },
               { name: "08/2015 - 09/2015",
                 meta: "Smartrac Technology GmbH",
                 id: "cv-smartrac",
                 description: <p>
-                In einem Praktikum über den Sommer bei <Link extern href="https://www.smartrac-group.com">
-                Smartrac</Link> konnte ich eine Server-Erweiterung für deren{' '}
+                Während eines Praktikums bei <Link extern href="https://www.smartrac-group.com">
+                Smartrac</Link> entwickelte ich eine Erweiterung für deren{' '}
                 <Link extern href="https://rfid.averydennison.com/en/home/products-solutions/iot/connected-product-cloud.html">Smart Cosmos</Link>{' '}
-                IoT-System mit Java entwickeln, welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
+                IoT-System, welches es ermöglichte SMS in Verbindung mit IoT Events mittels{' '}
                 <Link extern href="https://www.twilio.com">Twilio</Link> zu verschicken.
                 </p>
               }]
