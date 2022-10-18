@@ -64,7 +64,7 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
-              { name: "04/2021 - jetzt",
+              { name: "10/2022 - jetzt",
                 meta: "TU München",
                 id: "cv-research-tum",
                 description: <p>
@@ -72,7 +72,7 @@ const content = (
                 der Technischen Universität München als wissenschaftlicher Mitarbeiter,{' '}
                 wo ich an Cloud Datenbanken forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
                 </p> },
-              { name: "04/2021 - jetzt",
+              { name: "04/2021 - 09/2022",
                 meta: "Universität Erlangen",
                 id: "cv-research-erlangen",
                 description: <p>
