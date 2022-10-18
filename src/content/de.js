@@ -9,7 +9,7 @@ const content = (
     { lang: "de",
       title : "Lebenslauf",
       person: {
-          occupation: "Softwareentwickler, Doktorand"
+          occupation: "Doktorand an der TU München"
       },
       skills: {
         others: 'Andere'
@@ -18,8 +18,8 @@ const content = (
           id: "Introduction",
           header: <SkillLevels />,
           content: <p className="Biography">
-                     Ich bin Doktorand an der Friedrich–Alexander Universität Erlangen–Nürnberg{' '}
-                     und forsche am Lehrstuhl für Datenmanagement unter Viktor Leis an Datenbanken.{' '}
+                     Ich bin Doktorand an der TU München{' '}
+                     und forsche am Lehrstuhl für Decentralized Information Systems and Data Management unter Viktor Leis an Datenbanken.{' '}
                      Davor war ich Student an der TU München, der LMU München und der Universität Augsburg,{' '}
                      wo ich meinen Bachelor in Ingenieurinformatik und meinen Master in Software Engineering absolvierte.{' '}
                      Ich bin interessiert an high-performance Software, verteilten Systemen und Programmiersprachen.
@@ -39,7 +39,7 @@ const content = (
               { name: "01/2021 - jetzt",
                 meta: "Doktorand" ,
                 description: <p>
-                Ich bin Doktorand an der Friedrich-Alexander-Universität Erlangen-Nürnberg unter der Leitung von Prof. Viktor Leis.
+                Ich bin Doktorand an der Technischen Universität München unter der Leitung von Prof. Viktor Leis.
                 Zur Zeit forsche ich an analytischen Datenbanksystemen und effizienter Anfragebearbeitung.
                 </p>
               },
@@ -64,13 +64,21 @@ const content = (
           id: "Working-Experience",
           name: "Arbeitserfahrung",
           items: [
+            { name: "04/2021 - jetzt",
+              meta: "TU München",
+              id: "cv-research-tum",
+              description: <p>
+                       Ich arbeite am Lehrstuhl für <Link extern href="https://www.cs.cit.tum.de/dis/home/">Decentralized Information Systems and Data Management</Link>{' '}
+                       der Technischen Universität München als wissenschaftlicher Mitarbeiter,{' '}
+                       wo ich an Cloud Datenbanken forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
+                     </p> },
               { name: "04/2021 - jetzt",
                 meta: "Universität Erlangen",
                 id: "cv-research-erlangen",
                 description: <p>
-                Ich arbeite am <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
-                der Friedrich-Alexander-Universität Erlangen-Nürnberg als wissenschaftlicher Mitarbeiter,{' '}
-                wo ich forsche und verschiedene Kurse, studentische Projekte und Abschlussarbeiten betreue.
+                Ich war am <Link extern href="https://www.cs6.tf.fau.de/">Lehrstuhl für Datenmanagement</Link>{' '}
+                der Friedrich-Alexander-Universität Erlangen-Nürnberg als wissenschaftlicher Mitarbeiter angestellt,{' '}
+                bis ich zusammen mit Prof. Leis an die TU München zog.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "Universität Jena",

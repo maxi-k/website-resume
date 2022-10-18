@@ -9,7 +9,7 @@ const content = (
     { lang: "en",
       title : "Resume",
       person: {
-          occupation: "Developer, PhD Student"
+          occupation: "Ph.D. Student at TU Munich"
       },
       github: {
           languages: 'Languages (Github)'
@@ -21,8 +21,8 @@ const content = (
         id: "Introduction",
         header: <SkillLevels />,
         content: <p className="Biography">
-                   I am a PhD student at the Friedrich–Alexander University Erlangen–Nürnberg,{' '}
-                   researching databases at the chair for data management under Viktor Leis.{' '}
+                   I am a Ph.D. student at the Technical University Munich,{' '}
+                   researching databases at the Chair for Decentralized Information Systems and Data Management under Viktor Leis.{' '}
                    Before that, I was student at TU Munich, LMU Munich, and the University of Augsburg,{' '}
                    completing my bachelors degree in computer science and engineering, and my masters degree in software engineering.{' '}
                    I'm interested in high-performance software, distributed systems, and programming languages.
@@ -40,10 +40,10 @@ const content = (
           name: "Education",
           items: [
               { name: "01/2021 - now",
-                meta: "PhD Student" ,
+                meta: "Ph.D. Student" ,
                 description: <p>
-                I'm doing my PhD with Prof. <Link extern href={common.publication.phdAdvisor}>Viktor Leis</Link> at
-                the Friedrich-Alexander University Erlangen-Nürnberg.
+                I'm doing my Ph.D. with Prof. <Link extern href={common.publication.phdAdvisor}>Viktor Leis</Link> at
+                the Technical University Munich.
                 At the moment I am researching analytical database systems and efficient query processing.
                 </p>
               },
@@ -70,21 +70,30 @@ const content = (
           id: "Working-Experience",
           name: "Working Experience",
           items: [
-              { name: "04/2021 - now",
+              { name: "10/2022 - now",
+                meta: "TU Munich",
+                id: "cv-research-tum",
+                description: <p>
+                I am employed at the{' '}
+                <Link extern href="https://www.cs.cit.tum.de/dis/home/">Chair for Decentralized Information Systems and Data Management</Link>{' '}
+                at the Technical University Munich as a doctoral researcher,{' '}
+                where I research databases and supervise various courses, student projects, and theses.
+                </p> },
+              { name: "04/2021 - 09/2022",
                 meta: "University Erlangen",
                 id: "cv-research-erlangen",
                 description: <p>
-                I am employed at the{' '}
-                <Link extern href="https://www.cs6.tf.fau.eu/">chair for data management</Link>{' '}
-                Friedrich-Alexander University Erlangen-Nürnberg as a research assistant,{' '}
-                where I research databases and supervise various courses, student projects, and theses.
+                I was employed at the{' '}
+                <Link extern href="https://www.cs6.tf.fau.eu/">Chair for Data Management</Link>{' '}
+                of the Friedrich-Alexander University Erlangen-Nürnberg as a research assistant.
+                I then moved to TU Munich together with Prof. Leis.
                 </p> },
               { name: "04/2020 - 03/2021",
                 meta: "University of Jena",
                 id: "cv-job-jena",
                 description: <p>
-                I was employed at the chair for{' '}
-                <Link extern href="https://dbis1.github.io/">Databases and Information Systems</Link>{' '}
+                I was employed at the{' '}
+                <Link extern href="https://dbis1.github.io/">Chair for Databases and Information Systems</Link>{' '}
                 at the Friedrich-Schiller University Jena as a research assistant.
                 I then moved to Erlangen together with the chair.
                 </p> },
