@@ -23,7 +23,7 @@ const content = (
         content: <p className="Biography">
                    I am a Ph.D. student at the Technical University Munich,{' '}
                    researching databases at the Chair for Decentralized Information Systems and Data Management under Viktor Leis.{' '}
-                   Before that, I was student at TU Munich, LMU Munich, and the University of Augsburg,{' '}
+                   Before that, I was a student at TU Munich, LMU Munich, and the University of Augsburg,{' '}
                    completing my bachelors degree in computer science and engineering, and my masters degree in software engineering.{' '}
                    I'm interested in high-performance software, distributed systems, and programming languages.
                  </p>
