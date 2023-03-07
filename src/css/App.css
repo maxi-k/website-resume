@@ -113,6 +113,10 @@
 
 .Publication-Abstract {}
 
+.Publication-Available-Soon {
+    color: rgba(0, 0, 0, 0.4);
+}
+
 .PersonalLinks {
     text-align: center;
 }

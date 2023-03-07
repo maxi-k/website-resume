@@ -14,6 +14,9 @@ const content = (
       skills: {
         others: 'Andere'
       },
+      publication: {
+        availableSoon: "bald verfügbar"
+      },
       resumeSections: [{
           id: "Introduction",
           header: <SkillLevels />,

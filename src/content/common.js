@@ -19,6 +19,22 @@ const content = {
         phdAdvisor: 'https://scholar.google.com/citations?user=qFOwPNQAAAAJ'
     },
     publications: [
+        { title: "BtrBlocks: Efficient Columnar Compression for Data Lakes",
+          authors: ["Maximilian Kuschewski", "David Sauerwein", "Adnan Alhomssi", "Viktor Leis"],
+          conference: "SIGMOD",
+          year: 2023,
+          type: "Research Paper",
+          //link: "http://www.vldb.org/pvldb/vol14/p1606-leis.pdf",
+          //codeLink: "https://github.com/maxi-k/costoptimal-model",
+          abstract:
+          "Analytics is moving to the cloud and data is moving into data lakes. " +
+          "These reside on blob storage services like S3 and enable seamless data sharing and system interoperability. " +
+          "To support this, many systems build on open storage formats like Apache Parquet. " +
+          "However, these formats are not optimized for remotely-accessed data lakes and today's high-throughput networks. " +
+          "Inefficient decompression makes scans CPU-bound and thus increases query time and cost. " +
+          "With this work we present BtrBlocks, an open columnar storage format designed for data lakes. " +
+          "BtrBlocks uses a set of lightweight encoding schemes, achieving fast and efficient decompression and high compression ratios."
+        },
         { title: "Towards Cost-Optimal Query Processing in the Cloud",
           authors: ["Viktor Leis", "Maximilian Kuschewski"],
           conference: "VLDB",
