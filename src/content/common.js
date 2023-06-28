@@ -24,8 +24,8 @@ const content = {
           conference: "SIGMOD",
           year: 2023,
           type: "Research Paper",
-          //link: "http://www.vldb.org/pvldb/vol14/p1606-leis.pdf",
-          //codeLink: "https://github.com/maxi-k/costoptimal-model",
+          link: "https://www.cs.cit.tum.de/fileadmin/w00cfj/dis/papers/btrblocks.pdf",
+          codeLink: "https://github.com/maxi-k/btrblocks",
           abstract:
           "Analytics is moving to the cloud and data is moving into data lakes. " +
           "These reside on blob storage services like S3 and enable seamless data sharing and system interoperability. " +
