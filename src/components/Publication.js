@@ -14,7 +14,7 @@ export const Publication = ({ title, authors, type, link, abstract, codeLink = n
               <Icon name="file alternate" />
               <span>{t('publication.readFull')}</span>
             </Link>
-            || <span class="Publication-Available-Soon">
+            || <span className="Publication-Available-Soon">
                  <Icon name="file alternate" />
                  <span>{t('publication.availableSoon')}</span>
                </span>

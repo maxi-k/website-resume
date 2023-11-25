@@ -22,7 +22,7 @@ export const SkillDescription = ({ name, color, percentage, uriKey = null }) => 
   <span className="Skill-Description">
 
     <Link extern nohighlight className="Skill-Tag"
-          href={"https://github.com/maxi-k?tab=repositories&q=&type=&language="
+          href={`${t('person.githubUrl')}?tab=repositories&q=&type=&language=`
                 + encodeURIComponent((uriKey || name.toLowerCase()).trim())}>
       <span className="Skill-ColorTag" style={{ backgroundColor: color }}> </span>
       <span className="Skill-NameTag">{name}</span>

@@ -1,17 +1,22 @@
+const githubUrl = "https://github.com/maxi-k";
 const content = {
     person: {
-        name: "Maximilian Kuschewski"
+        name: "Maximilian Kuschewski",
+        githubUrl
     },
     social: [
         { name: "Github",
-          path: "https://github.com/maxi-k",
+          path: githubUrl,
           icon: "github" },
         { name: "Google Scholar",
           path: "https://scholar.google.com/citations?user=PC1VMZAAAAAJ",
           icon: "graduation cap" },
         { name: "LinkedIn",
           path: "https://www.linkedin.com/in/maxi-k",
-          icon: "linkedin" }
+          icon: "linkedin" },
+        { name: "X",
+          path: "https://x.com/maxikuschewski",
+          icon: "twitter" }
     ],
     publication: {
         readFull: 'PDF',

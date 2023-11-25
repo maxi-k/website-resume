@@ -93,10 +93,11 @@
     margin-left: 0.3em;
 }
 
-.Biography {
-    font-size: 1.375rem;
+.ResumeSection-Introduction {
+    font-size: 1.25rem;
     text-align: justify;
-    line-height: 1.875rem;
+    line-height: 1.75rem;
+    padding-top: 0;
 }
 
 .Publication-Title {
@@ -139,40 +140,96 @@ a.icon-link:not(:hover) {
     }
 }
 
-@media only print {
-    .App, .sub.header {
-        font-size: 0.8rem !important;
+@media only screen {
+    .github-url {
+        display: none;
     }
+}
+
+@media only print {
+
+    .ResumeSubheader p { font-size: 1.5em; }
+
     .ResumeSection {
         padding-top: 1.5em;
     }
+
     .App {
         display: grid !important;
         grid-template-areas:
-            "header avatar"
-            "languages education"
-            "languages education"
-            "working-experience certificates"
-            "working-experience contact";
-        grid-template-columns: 2fr 1fr;
+            "header header"
+            "biography languages"
+            "working-experience education"
+            "working-experience education"
+            "working-experience publications";
+        grid-template-columns: 1.4fr 1fr;
         grid-column-gap: 2.0rem;
         padding: 2.0rem;
     }
 
-    .LanguageButtons, .SkillLevels {
+    .Avatar, .LanguageButtons {
         display: none !important;
-    }
-
-    .Avatar {
-        grid-area: avatar;
+        /*
         width: 10em !important;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
     }
+
     .ResumeHeader { grid-area: header; }
-    .ResumeSection-Languages { grid-area: languages; }
+    .ResumeSection-Introduction { grid-area: biography; }
+    .ResumeSection-Publications { grid-area: publications; }
     .ResumeSection-Education { grid-area: education; }
     .ResumeSection-Working-Experience { grid-area: working-experience; }
     .ResumeSection-Certificates { grid-area: certificates; }
-    .ResumeSection-Contact { grid-area: contact; }
+    .ResumeSection-Contact {
+        grid-area: contact;
+        display: none;
+    }
+
+    .ResumeSection-SkillLevels {
+        grid-area: languages;
+    }
+
+    /**  remove links in print */
+    .PersonalLinks {
+        display: none;
+    }
+
+    .Publication-Links {
+        display: none;
+    }
+
+    a {
+        color: rgba(0,0,0,.87) !important;
+    }
+
+    /** remove skill bar, keep only percentages */
+    .ResumeSection-SkillLevels {
+    }
+
+    .ResumeSection-SkillLevels .github-url {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 1.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0;
+    }
+
+    .Percentile-Bar {
+        margin: 0 1.5em;
+    }
+
+    .SkillLevels-Descriptions {
+        display: flex;
+        padding: 1em 0.5em 0em 0.5em;
+        flex-wrap: wrap;
+    }
+
+
+    .Skill-NameTag {}
+
+    .Skill-PercentageTag {
+        color: rgba(0, 0, 0, 0.6);
+    }
 }

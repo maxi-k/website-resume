@@ -21,9 +21,12 @@ const content = (
         availableSoon: "available soon"
       },
       resumeSections: [{
+        id: "SkillLevels",
+        header: <span className="github-url">{common.person.githubUrl.replace("https://", '')}</span>,
+        content: <SkillLevels />
+      }, {
         id: "Introduction",
-        header: <SkillLevels />,
-        content: <p className="Biography">
+        content: <p>
                    I am a Ph.D. student at the Technical University Munich,{' '}
                    researching databases at the Chair for Decentralized Information Systems and Data Management under Viktor Leis.{' '}
                    Before that, I was a student at TU Munich, LMU Munich, and the University of Augsburg,{' '}

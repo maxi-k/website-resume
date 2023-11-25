@@ -18,9 +18,12 @@ const content = (
         availableSoon: "bald verfügbar"
       },
       resumeSections: [{
-          id: "Introduction",
-          header: <SkillLevels />,
-          content: <p className="Biography">
+        id: "SkillLevels",
+        header: <span className="github-url">{common.person.githubUrl.replace("https://", '')}</span>,
+        content: <SkillLevels />
+      }, {
+        id: "Introduction",
+        content: <p>
                      Ich bin Doktorand an der TU München{' '}
                      und forsche am Lehrstuhl für Decentralized Information Systems and Data Management unter Viktor Leis an Datenbanken.{' '}
                      Davor war ich Student an der TU München, der LMU München und der Universität Augsburg,{' '}
