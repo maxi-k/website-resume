@@ -24,6 +24,20 @@ const content = {
         phdAdvisor: 'https://scholar.google.com/citations?user=qFOwPNQAAAAJ'
     },
     publications: [
+        { title: "High-Performance Query Processing with NVMe Arrays: Spilling without Killing Performance",
+          authors: ["Maximilian Kuschewski", "Jana Giceva", "Thomas Neumann", "Viktor Leis"],
+          conference: "SIGMOD",
+          year: 2025,
+          type: "Research Paper",
+          link: "https://www.cs.cit.tum.de/fileadmin/w00cfj/dis/papers/umami.pdf",
+          abstract:
+          "This paper aims to bridge the gap between fast in-memory query engines and slow but robust engines that can utilize external storage. " +
+          "We find that current systems have to choose between fast in-memory operators and slower out-of-memory operators. " +
+          "We present a solution that leverages two independent but complementary techniques: " +
+          "First, we propose adaptive materialization, which can turn any hash-based in-memory operator into an out-of-memory operator without reducing in-memory performance. " +
+          "Second, we introduce self-regulating compression, which optimizes the throughput of spilling operators based on the current workload and available hardware. " +
+          "We evaluate these techniques using the prototype query engine Spilly, which matches the performance of state-of-the-art in-memory systems, but also efficiently executes large out-of-memory workloads by spilling to NVMe arrays."
+        },
         { title: "BtrBlocks: Efficient Columnar Compression for Data Lakes",
           authors: ["Maximilian Kuschewski", "David Sauerwein", "Adnan Alhomssi", "Viktor Leis"],
           conference: "SIGMOD",
