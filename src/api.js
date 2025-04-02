@@ -13,8 +13,8 @@ const SKILL_TRIVIAL_LANGUAGES = new Set([
     "CSS",
     "TeX",
 ])
-// const SKILL_API_URL = "https://okhkp2o8fd.execute-api.eu-central-1.amazonaws.com/default/"
-const SKILL_API_URL = "https://f2av4ku2nfxzich3w6l5dpn4ey0gjcyn.lambda-url.eu-central-1.on.aws/"
+const SKILL_API_URL = "https://okhkp2o8fd.execute-api.eu-central-1.amazonaws.com/default/"
+// const SKILL_API_URL = "https://f2av4ku2nfxzich3w6l5dpn4ey0gjcyn.lambda-url.eu-central-1.on.aws/"
 const cache = {}
 export const useSkills = () => {
     const [skills, setSkills] = useState(cache.current);
