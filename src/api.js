@@ -5,7 +5,8 @@ const SKILL_EXCLUDED_REPOS = Object.freeze([
     "hci-complementing-mirror",
     "bachelor-code-arduino",
     "osv",
-    "ops"
+    "ops",
+    "kv-store"
 ])
 const SKILL_TRIVIAL_LANGUAGES = new Set([
     "HTML",
