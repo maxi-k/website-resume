@@ -6,7 +6,8 @@ const SKILL_EXCLUDED_REPOS = Object.freeze([
     "bachelor-code-arduino",
     "osv",
     "ops",
-    "kv-store"
+    "kv-store",
+    "spilly"
 ])
 const SKILL_TRIVIAL_LANGUAGES = new Set([
     "HTML",
